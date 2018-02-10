@@ -16,21 +16,25 @@ main
 footer
 { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */ }
-header {background-color:#FFFFFF; height:180
-    px;margin-top:0px;}
-h1  {text-align:center; margin-top:0px; margin-bottom:20px;}
+header {background-color:#FFFFFF; height:145px;
+    margin-top:0px;}
+h1  {text-align:center; margin-top:-75px; margin-bottom:10px;}
+h2 {text-align:center; background-color: #FDD331;}
 header id=
-img {float:center;}
-header .subheading {text-align:center;margin-top:10px;margin-bottom: 10px;}
+    img {width:100%;margin-left: 20px;margin-top:20px;}
+header .subheading {text-align:center;margin-top:20px;margin-bottom: 10px;}
 nav {}
 nav button {}
 nav ul {
     list-style-type:none;
     margin:0;
     padding: 0;
+    background-color:#386FA4;width: auto; height: 75px; margin-top: 10px;
+
 
 }
 nav ul li {
+    text-align: center;
     width:150px;
     height:40px;
     margin:0px 4px;
@@ -48,7 +52,8 @@ nav ul li a {
     height:40px;
     line-height:40px;
     text-decoration:none;
-    text-align: center;
+    text-align:center;
+    color:#FFFFFF;
 
 
 }
@@ -56,9 +61,29 @@ nav ul li.active a {
     background-color:none;
     color:none;
 }
-nav ul li a:hover:not(.active) {background-color: #FFFFFF;
+nav ul li a:hover:not(.active) {background-color: none;
 color:#FDD331;}
 main {} main h2 {}
+
+table  {
+    width:100%;
+    border-collapse:collapse;
+    background-color: #FDD331;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+td{
+    text-align: center;
+    background-color: #FDD331;
+}
+th{
+    text-align: center;
+    background-color: #FDD331;
+}
+
+}
 main figure
 { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
