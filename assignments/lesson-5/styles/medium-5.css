@@ -2,7 +2,7 @@
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
     nav button { display:none; }  /* hamburger button does not need to be shown */
-
+    title {background color:#2E3C54;width:auto; height:50px; padding:10px;}
     section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
 
     article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
