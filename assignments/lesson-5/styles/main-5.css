@@ -1,7 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 * { box-sizing: border-box;}
 /* This wildcard applies to all elements ensuring a box layout model */
-body { font-size: 25px;color:#1F2D45;}
+body { font-size: 25px;color:#000000;}
     /* Declare the base font-family - from google font api or other */
 header{ background color:#2E3C54;width:auto; height:75px; padding:10px;}
 title
@@ -11,19 +11,16 @@ font-size:25px;
 font-weight:bold;
 font:Tahoma;
 }
-<img src="/assignments/lesson-5/images/sunnyicon.png" alt="The site logo" width="50px;" height="auto">
-<h1>Franklin Weather Page</h1>
-
 
 main
 footer
 { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */ }
-header {}
-header h1 .siteTitle {background-color:#386FA4;text-align:center;margin-top:10px;}
+header {background-color:#386FA4; height:150px; }
+h1  {text-align:center; margin-top:10px; margin-bottom:20px;}
 header id=
-header img {float:center;}
-header .subheading {background-color:#386FA4;text-align:center;margin-top:25px;}
+img {align-content:center;}
+header .subheading {;text-align:center;margin-top:10px;margin-bottom: 10px;}
 nav {}
 nav button {}
 nav ul {
@@ -38,6 +35,10 @@ nav ul li {
     border: 2px solid #000000;
     border-radius:5px;
     float:left;
+    margin-left:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 nav ul li a {
     display:block;
@@ -47,6 +48,7 @@ nav ul li a {
     text-decoration:none;
     text-align: center;
     background-color:none;
+
 }
 nav ul li.active a {
     background-color:none;
@@ -63,7 +65,7 @@ article p.town-article img { /* This structure refers to img elements that are t
     /* fill the page in the small/phone view */
     margin: ???; }
 
-footer {background-color:#386FA4; text-align:center; width:"auto"; height:"50px"; padding 20px;}
+footer {background-color:#386FA4; text-align:center; width:"auto"; height:"50px"; padding-bottom:20px;padding-top: 20px;}
 footer aside {}
 footer>p {}
 /* This structure refers to p elements that are direct children of the footer element */
