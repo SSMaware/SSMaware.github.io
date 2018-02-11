@@ -2,8 +2,10 @@
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     title {background color:#FFFFFF;width:auto; height:50px; padding:10px;}
     head {background color:#FFFFFF;width:auto; height:50px; padding:10px;}
-    article p.town-article img {float:right; width="50"; height="50";margin-left:10px;margin-right:10px; }
+    article p.town-article img {float:right; width="40%"; height="50";margin-left:10px;margin-right:10px; }
 }
+
+
 nav ul {
     list-style-type:none;
     margin:0;

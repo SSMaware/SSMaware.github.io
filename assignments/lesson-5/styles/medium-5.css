@@ -4,10 +4,9 @@
     nav button { display:none; }  /* hamburger button does not need to be shown */
     title {background color:#FFFFFF;width:auto; height:50px; padding:10px;}
     section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
-    article p.town-article img {width: 62.666%; float:right;margin-left:10px;margin-right:10px; }
-   /* responsive images */
-
+    article p.town-article img {width: 40%; float:right;margin-left:10px;margin-right:10px; }
 }
+
 nav ul {
     list-style-type:none;
     margin:0;
