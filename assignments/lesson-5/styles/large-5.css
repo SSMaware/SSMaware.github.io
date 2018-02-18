@@ -1,33 +1,6 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-
-
-head {background-color:#FFFFFF;width:auto; height:50px; padding:10px;}
-
-
-
-main {} main h2 {}
-
-table  {
-    border:1px solid gray;
-    width:100%;
-    border-collapse:collapse;
-    background-color: #FDD331;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-td{
-    text-align: center;
-    background-color: #FDD331;
-}
-th{
-    text-align: center;
-    background-color: #FDD331;
-}
-main figure
-{ margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-section {text-align: center;}
+    nav button {display:none;}
+    section.forecast { display: block; }
+    article p.town-article img {width: 29.333%;}
