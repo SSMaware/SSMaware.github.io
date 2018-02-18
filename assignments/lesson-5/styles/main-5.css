@@ -1,28 +1,60 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
-* { box-sizing: border-box;}
+{ box-sizing: border-box;}
 /* This wildcard applies to all elements ensuring a box layout model */
-body { font-size: 25px;color:#000000;}
-    /* Declare the base font-family - from google font api or other */
-header {}
+body {
+    font-size:25px;
+    color:#000000;
+    font-family:'Roboto', sans-serif;
+}
+
+.logo {
+    margin-left:10px;
+    width=25px;
+    height=10px;
+}
+
+section.forecast { display: none; }
 
 title
+
 #nav{background-color:#FDD331;
 height:35px;
+    width:100%;
 font-size:25px;
 font-weight:bold;
 font:Tahoma;
 }
 
 main
-footer
-{ /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */ }
-header {background-color:#FFFFFF; height:145px;
-    margin-top:0px;}
-h1  {text-align:center; margin-top:-75px; margin-bottom:10px;}
-h2 {text-align:center; background-color: #FDD331; border 1 color:}
 
-header .subheading {text-align:center;margin-top:20px;margin-bottom: 10px;}
+
+header {
+    background-color:#FFFFFF;
+    height:145px;
+    margin-top:0px;
+}
+
+
+
+h1  {
+    display:inlign;
+    text-align:center;
+    margin-top:-75px;
+    margin-bottom:10px;
+}
+
+h2 {
+    display:inlign;
+    text-align:center;
+    background-color: #FDD331;
+    border 1 color:#000000;
+}
+
+.subheading {
+    text-align:center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
 
 nav {}
 nav button {}
@@ -47,21 +79,21 @@ nav ul li a {
     line-height:40px;
     text-decoration:none;
     text-align:center;
-    color:#;
-
-
+    color:#000000;
 }
 nav ul li.active a {
-    background-color:none;
-    color:none;
+   /* background-color:none;*/
+    color:#454545;
 }
-nav ul li a:hover:not(.active) {background-color: none;
+nav ul li a:hover:not(.active) {/*background-color: none;*/
 color:#FDD331;}
 
 
 main {} main h2 {}
+/*
+table, td, th {border: 1px solid gray}
 
-/*table  {
+table  {
 border:1px solid gray;
     width:100%;
     border-collapse:collapse;
@@ -80,15 +112,33 @@ th{
     background-color: #FDD331;
 
 }
-
 */
-main figure
-{ margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-section {text-align: center;}
+main figure{
+    margin: 0px; 0px;
+    .2rem 2%;
+    width:96%;
+}
+
+main figure img {
+    width: 100%;
+    display:block;
+}
+section {
+    text-align: center;
+}
 
 
-footer {background-color:#386FA4; text-align:center; width:"auto"; height:"50px"; padding-bottom:20px;padding-top: 20px;}
+footer {
+    background-color:#386FA4;
+    text-align:center;
+    width: 100%;
+    height:230px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:0px;
+    margin-top:20px;
+}
+
 footer aside {}
 footer>p {}
 /* This structure refers to p elements that are direct children of the footer element */

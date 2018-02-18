@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-us">
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +12,7 @@
         <meta name="description" content="Weather Facts Page">
         <!-- external style references in the proper cascading order -->
 
-        <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
-        <!-- Google API font reference -->
-
-        <link href="/assignments/styles/normalize.css" rel="stylesheet">
+        <link href="https://ssmaware.github.io/assignments/lesson-5/styles/normalize.css" rel="stylesheet">
         <!-- normalize useragent/browser defaults -->
 
         <link href="styles/main-5.css" rel="stylesheet">
@@ -29,7 +27,7 @@
     </head>
     <body>
         <header>
-            <img src="/assignments/lesson-5/images/sunflowersungraphic.png"alt="sitelogo" width=75px; height=75px;margin-left=10px; margin-top=10px; >
+            <img class="logo" src="/assignments/lesson-5/images/sunflowersungraphic.png" alt="sitelogo">
             <div id="siteTitle"><h1><strong> Weather Facts</strong></h1></div>
             <div class="subheading">Weather Information at your Fingertips!</div><br>
 
@@ -51,7 +49,7 @@
 
             <figure>
                 <picture>
-                    <img src="/assignments/lesson-5/images/landscape.jpg" alt="landscape" width=100%; height=250px;>
+                    <img src="/assignments/lesson-5/images/landscape.jpg" alt="landscape" >
                 </picture>
             </figure>
             <br>
@@ -74,11 +72,9 @@
                     <p>Wind Speed: <strong>5 mph SW</strong></p>
                 </div> </section>
             <section class="forecast">
+                <h2>10 Day Forecast</h2>
+                <table>
 
-                <table border=1>
-
-                        <tr><h2>10 Day Forecast</h2>
-                        </tr>
                     <thead>
                         <tr>
                             <th>Day 1</th>
@@ -110,14 +106,16 @@
                 </table>
             </section>
                     <section>
+                        <h3>Franklin in the News </h3>
                         <article>
-                            <h3>Franklin in the News </h3>
-                            <p class="town-article"><img src="/images/franklinphoto.jpg" alt="City News" ></p>
+                            <p class="town-article"><img src="/images/franklinphoto.jpg" alt="City News" >
+                            </p>
                                 <h4>Franklin's Family Festival</h4>
                                 <p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
                                 </p>
                         </article>
                 </section>
+
         </main>
 <footer>
     <aside>
@@ -128,7 +126,7 @@
         <div>contact@theurl.com</div>
         <p class="footer-bar"> <small> <a> &copy; *All Rights Reserved * 2020 * Weather Facts * Sandra S. Marler * Terms of use link *
             <span id="currentdate">Date</span></a></small></p>
-        <script src="scripts/currentdate.js">
+        <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
     </aside>
 </footer>

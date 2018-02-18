@@ -1,11 +1,14 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
-    nav button { display:none; }  /* hamburger button does not need to be shown */
-    title {background color:#FFFFFF;width:auto; height:50px; padding:10px;}
-    section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+    nav button {display:none;}
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
     article p.town-article img {width: 40%; float:right;margin-left:10px;margin-right:10px; }
 }
+head {background-color:#FFFFFF;width:auto; height:50px; padding:10px;}
+img.logo {margin-left:10px; width=25px; height=25px;}
+title {background-color:#FFFFFF;width:auto; height:50px; padding:10px;}
+article p.town-article img {float:right; width=40%; height=50; margin-left:10px;margin-right:10px;}
 
 nav ul {
     list-style-type:none;
@@ -40,10 +43,10 @@ nav ul li a {
 
 }
 nav ul li.active a {
-    background-color:none;
+   /* background-color:none;*/
     color:none;
 }
-nav ul li a:hover:not(.active) {background-color: none;
+nav ul li a:hover:not(.active) {/*background-color: none;*/
     color:#FDD331;}
 main {} main h2 {}
 
