@@ -15,9 +15,6 @@ header title {
     padding:10px;
     height:50px;
 }
-title {
-    background-color:#FFFFFF;
-}
 
 h1  {
     font-size:50px;
@@ -31,7 +28,7 @@ h2 {
     display:inline;
     text-align:center;
     background-color: #FDD331;
-    border=1; color:#000000;
+    color:#000000;
 }
 
 header
@@ -50,7 +47,10 @@ img.logo {
     margin-bottom:10px;
 }
 
-#nav{background-color:#FDD331;
+nav button {}
+nav ul {}
+#nav{
+    background-color:#386FA4;
     height:35px;
     width:100%;
     font-size:25px;
@@ -60,7 +60,7 @@ img.logo {
 
 nav {}
 nav button {}
-nav ul {display:none;}
+nav ul {}
 nav ul li {
     text-align: center;
     width:150px;
@@ -86,8 +86,7 @@ nav ul li.active a {
     color:#454545;
 }
 nav ul li a:hover:not(.active) {
-color:#FDD331;}
-
+    color:#FDD331;}
 
 main {}
 
@@ -113,10 +112,12 @@ section {
 article p.town-article img {
 
     float:right;
-    width=100px;
-    height=50px;
+    width:100%;
+    height:auto;
     margin-left:10px;
     margin-right:10px;
+    padding-bottom:20px;
+    padding-top:20px;
 }
 
 table, td, th {border: 1px solid gray}
