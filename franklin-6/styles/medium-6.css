@@ -1,0 +1,16 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button {
+        display:none;
+    }
+    section.forecast {
+        display:block;
+    }
+    article p.town-article img {
+        width: 50%;
+        height: auto;
+        float:right;
+    }
+
+    nav ul {display:inline;}
