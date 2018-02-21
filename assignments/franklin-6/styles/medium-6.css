@@ -1,16 +1,22 @@
 @media only screen and (min-width: 37.5em) {
-    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+	/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
-    nav button {
-        display:none;
-    }
-    section.forecast {
-        display:block;
-    }
-    article p.town-article img {
-        width: 50%;
-        height: auto;
-        float:right;
-    }
+	nav button {
+		display:none;
+	}
+	.hamburger{ display:none;
+	}
+	.navigation { background-color:#1A9835;overflow:hidden; text-align:center; }
+	.navigation li { display: inline-block; background-color:#1a9835; margin-left:.25rem;}
+	.navigation a { padding: .5rem; text-align: center; display: block; text-decoration:none; font-weight:800; color: #eee;}
+	.navigation a:hover { background-color: #17852f;}
+	section.forecast {
+		display:block;
+	}
+	article p.town-article img {
+		width: 50%;
+		height: auto;
+		float:right;
+	}
 
-    nav ul {display:inline;}
+	nav ul {display:inline;}
