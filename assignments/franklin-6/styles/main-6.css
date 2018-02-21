@@ -1,5 +1,6 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 * { box-sizing: border-box;}
+/* * {margin:0}*/
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -56,11 +57,13 @@ img.logo {
 	display:none;
 }
 .navigation.responsive { position: relative; }
-.navigation.responsive li { background-color:#1a9835; display:block;
+.navigation.responsive li { background-color:#386FA4; display:block;
 width: 100%; margin:2px 0; border: 1px solid #ddd; }
 .navigation.responsive li a { padding: 1rem; text-align: center; display: block; text-decoration:none; font-size:1rem; color: #eee; font-weight: 800;}
-.navigation.responsive li a:hover { background-color: #17852f;}
+.navigation.responsive li a:hover { background-color: #386FA4;}
 
+
+/*
 nav button {}
 nav ul {}
 
@@ -91,10 +94,10 @@ nav ul li a {
 	color:#000000;
 }
 nav ul li.active a {/*
-	color:#454545;*/
+	color:#454545;
 }
 nav ul li a:hover:not(.active) {
-	color:#FDD331;}
+	color:#FDD331;}*/
 
 
 main {}
@@ -166,3 +169,10 @@ footer aside {}
 footer>p {}
 /* This structure refers to p elements that are direct children of the footer element */
 /* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
