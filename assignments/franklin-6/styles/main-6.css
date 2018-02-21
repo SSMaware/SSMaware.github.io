@@ -60,7 +60,7 @@ img.logo {
 .navigation.responsive li { background-color:#386FA4; display:block;
 width: 100%; margin:2px 0; border: 1px solid #ddd; }
 .navigation.responsive li a { padding: 1rem; text-align: center; display: block; text-decoration:none; font-size:1rem; color: #eee; font-weight: 800;}
-.navigation.responsive li a:hover { background-color: #386FA4;}
+.navigation.responsive li a:hover {color: #FDD331;}
 
 
 /*

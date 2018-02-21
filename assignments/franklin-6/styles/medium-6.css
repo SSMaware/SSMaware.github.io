@@ -6,9 +6,8 @@
 	}*/
 
 	/* 35em is also 560px when basefont is 16px */
-	@media only screen and (min-width: 35rem) {
-
-	}
+	/*@media only screen and (min-width: 35rem) {
+	}*/
 
 
 	.hamburger{ display:none;
@@ -16,7 +15,7 @@
 	.navigation { background-color:#386FA4;overflow:hidden; text-align:center; }
 	.navigation li { display: inline-block; background-color:#386FA4; margin-left:.25rem;}
 	.navigation a { padding: .5rem; text-align: center; display: block; text-decoration:none; font-weight:800; color: #eee;}
-	.navigation a:hover { background-color: #386FA4;}
+	.navigation a:hover {color: #FDD331;}
 	section.forecast {
 		display:block;
 	}
