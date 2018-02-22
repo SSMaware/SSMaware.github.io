@@ -172,9 +172,8 @@ footer>p {}
 /* Other Class Selectors */
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-/*.clearfix:after {
+.clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-*/

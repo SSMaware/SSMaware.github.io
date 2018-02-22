@@ -1,0 +1,34 @@
+@media only screen and (min-width: 37.5em) {
+	/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+	/*nav button {
+		display:none;
+	}*/
+
+	/* 35em is also 560px when basefont is 16px */
+	/*@media only screen and (min-width: 35rem) {
+	}*/
+
+
+	.hamburger{ display:none;
+	}
+	/*.navigation.responsive{display:none;}*/
+
+	.navigation { background-color:#386FA4;overflow:hidden; text-align:center; }
+	.navigation li { display: inline-block; background-color:#386FA4; margin-left:.25rem;}
+	.navigation a { padding: .5rem; text-align: center; display: block; text-decoration:none; font-weight:800; color: #eee;}
+	.navigation a:hover {color: #FDD331;}
+	section.forecast {
+		display:block;
+	}
+	article p.town-article img {
+		width: 50%;
+		height: auto;
+		float:right;
+	}
+
+	/*nav ul {display:inline;}*/
+
+
+
+
