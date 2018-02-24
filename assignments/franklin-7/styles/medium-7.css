@@ -10,7 +10,7 @@
 	.hamburger {
 		display: none;
 	}
-	.navigation.responsive{display:none;}
+	.navigation.responsive{}
 	.navigation {
 		background-color: #386FA4;
 		overflow: hidden;
