@@ -9,6 +9,7 @@ h = parseInt(h);
 l = parseInt(l);
 s = parseInt(s);
 
+
 var t = (h + l) / 2;
 var w = Math.pow(s, 0.16);
 
