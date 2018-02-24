@@ -12,7 +12,7 @@
 		<meta name="description" content="Weather Facts Page">
 		<!-- external style references in the proper cascading order -->
 
-		<link href="https://ssmaware.github.io/assignments/franklin-7/franklin-7.html/styles/normalize.css" rel="stylesheet">
+		<link href="styles/normalize.css" rel="stylesheet">
 		<!-- normalize useragent/browser defaults -->
 
 		<link href="styles/main-7.css" rel="stylesheet">
@@ -51,37 +51,29 @@
 
 			<h1>Gallery</h1>
 
-		</nav>
-		<main>
-
-			<figure class="weatherimages">
-				<picture>
-					<source media="(min-width: 64rem)" srcset="images/snowpark.jpg"  alt="snowpark">
-					<source	media="(min-width: 64rem)" srcset="images/tornado.jpg"    alt="tornado">
-					<source	media="(min-width: 64rem)" srcset="images/rainbow.jpg"    alt="rainbow">
-					<source	media="(min-width: 64rem)" srcset="images/lightening.jpg" alt="lightening">
-					<source	media="(min-width: 64rem)" srcset="images/misty-weather.jpg" alt="misty-weather">
-					<source	media="(min-width: 64rem)" srcset="images/road.jpg"         alt="road">
-
-			<source media="(min-width: 37.5em)"srcset="images/snowpark.jpg" alt="snowpark">
-							srcset="images/tornado.jpg"       alt="tornado",
-							srcset="images/rainbow.jpg"       alt="rainbow",
-							srcset="images/lightening.jpg"    alt="lightening",
-							srcset="images/misty-weather.jpg" alt="misty-weather",
-							srcset="images/road.jpg"          alt="road"
-							>
-
-					<source media="(min-width: 0em)"
-							srcset="images/snowpark.jpg"      alt="snowpark",
-							srcset="images/tornado.jpg"       alt="tornado",
-							srcset="images/rainbow.jpg"       alt="rainbow",
-							srcset="images/lightening.jpg"    alt="lightening",
-							srcset="images/misty-weather.jpg" alt="misty-weather",
-							srcset="images/road.jpg"          alt="road"
-							>
+			<div class="grid">
+			<figure>
+				<picture class=weatherimages>
+				<img src="images/sunburst.jpg"  	 alt="sunburst">
+					<figcaption>Sunburst</figcaption>
+				<img src ="images/rainbow.jpg"  	 alt="rainbow">
+					<figcaption>Rainbow</figcaption>
+				<img src ="images/misty-weather.jpg" alt="misty-weather">
+					<figcaption>Misty-Weather</figcaption>
+				<img src="images/snowpark.jpg" 	 	 alt="snowpark">
+					<figcaption>Snowpark</figcaption>
+				<img src="images/lightning.jpg" 	 alt="lightning">
+					<figcaption>Lightning</figcaption>
+				<img src="images/tornado.jpg"   	 alt="tornado">
+					<figcaption>Tornado</figcaption>
 				</picture>
 			</figure>
 
+
+			</div>
+
+		</nav>
+		<main>
 
 
 

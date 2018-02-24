@@ -1,5 +1,21 @@
+@media only screen and (max-width: 37.5em){}
 /* This main css file contains the default rules and is geared toward the small/phone view */
 * { box-sizing: border-box;}
+.grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fill, 1fr 1fr 1fr);
+	grid-gap:20px;
+	grid-template-rows: 200px 100px;
+	grid-auto-rows:100px;
+	grid-gap: 20px;
+}
+
+.grid div{
+	border:1px solid rgb(0,95,107);
+	border-radius:3px;
+	background-color: rgba(0,95,107,0.8);
+	padding: 0.2em;
+}
 /* * {margin:0}*/
 /* This wildcard applies to all elements ensuring a box layout model */
 
@@ -56,12 +72,13 @@ img.logo {
 .navigation li {
 	display:none;
 }
-@media only screen and (max-width: 37.5em){
+/*@media only screen and (max-width: 37.5em){}*/
 .navigation.responsive { position: relative; }
 .navigation.responsive li { background-color:#386FA4; display:block;
 width: 100%; margin:2px 0; border: 1px solid #ddd; }
 .navigation.responsive li a { padding: 1rem; text-align: center; display: block; text-decoration:none; font-size:1rem; color: #eee; font-weight: 800;}
-	.navigation.responsive li a:hover {color: #FDD331;}}
+	.navigation.responsive li a:hover {color: #FDD331;}
+
 
 
 /*
