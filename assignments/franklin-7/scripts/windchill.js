@@ -16,5 +16,5 @@ var w = Math.pow(s, 0.16);
 var f = 35.74 + 0.6215 * t - 35.75 * w + 0.4275 * t * w;
 
 var result = f.toFixed(2);
-
+document.getElementById("averagetemp").innerHTML = t;
 document.getElementById("windchill").innerHTML = result;
