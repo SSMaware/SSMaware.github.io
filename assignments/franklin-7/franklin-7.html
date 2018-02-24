@@ -71,21 +71,16 @@
 				<div class="current"> <strong>Sunny</strong> <br>
 
 				</div>
-				<p var=h>High: <strong>90 &#176; F</strong></p>
-				<p var=l>Low: <strong>66 &#176; F</strong> </p>
+				<p>High: <strong id="h">90</strong> <strong>&#176; F</strong></p>
+				<p>Low: <strong id="l">66</strong> <strong>&#176; F</strong></p>
 			</div>
 
 			<div class="conditions">
 				<p>Precipitation: <strong>0 &#37;</strong></p>
-				<p var=s>Wind Speed: <strong>5 mph SW</strong></p>
+				<p>Wind Speed: <strong id="s">5</strong><strong> mph SW</strong></p>
+				<p> Average Temperature:<strong> &#176 F;</strong></p>
+				<p> Wind Chill: <strong id="windchill"></strong><strong> &#176 F;</strong></p>
 			</div>
-
-
-			<!--<div>
-				<p> Average Temperature:<strong> t &#176 F;</strong></p>
-				<p> Wind Chill:<strong> f &#176 F;</strong></p>
-			</div>-->
-
 
 		</section>
 		<section id="forecast">
@@ -149,5 +144,6 @@
 	</footer>
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/windchill.js"></script>
 </body>
 </html>

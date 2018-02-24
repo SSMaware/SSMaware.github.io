@@ -4,6 +4,33 @@
 		width: 50%;
 		padding: 15px;
 	}
+
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 10px;
+		background-color: aquamarine;
+	}
+
+	.gallery-item {
+		color: #fff;
+		margin-bottom: 40px;
+		border: 1px solid black;
+		padding: 10px;
+		text-align:center;
+		background-color: #000000;
+	}
+
+	.gallery-item p {
+		background-color: skyblue;
+		padding: 5px;
+	}
+
+
+	.gallery-item:hover figure{
+		box-shadow: 5px 5px #fff;
+	}
+	}
 }	/* 64em is also 1028px when basefont is 16px */
 	/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 

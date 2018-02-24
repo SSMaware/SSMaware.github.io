@@ -40,7 +40,6 @@ h1 {
 
 h2 {
 	font-size: 25px;
-	display: inline;
 	text-align: center;
 	background-color: #FDD331;
 	color: #000000;
@@ -76,37 +75,63 @@ header img.logo {
 .navigation li {
 	display: none;
 }
-@media only screen and (max-width: 37.5em){
-.navigation.responsive {
-	position: relative;
+
+@media only screen and (max-width: 37.5em) {
+	.navigation.responsive {
+		position: relative;
+	}
+
+	.navigation.responsive li {
+		background-color: #386FA4;
+		display: block;
+		width: 100%;
+		margin: 2px 0;
+		border: 1px solid #ddd;
+	}
+
+	.navigation.responsive li a {
+		padding: 1rem;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		font-size: 1rem;
+		color: #eee;
+		font-weight: 800;
+	}
+
+	.navigation.responsive li a:hover {
+		color: #FDD331;
+	}
 }
 
-.navigation.responsive li {
-	background-color: #386FA4;
-	display: block;
-	width: 100%;
-	margin: 2px 0;
-	border: 1px solid #ddd;
-}
-
-.navigation.responsive li a {
-	padding: 1rem;
-	text-align: center;
-	display: block;
-	text-decoration: none;
-	font-size: 1rem;
-	color: #eee;
-	font-weight: 800;
-}
-
-.navigation.responsive li a:hover {
-	color: #FDD331;
-}
-}
 /*
 
 nav ul li a:hover:not(.active) {
 	color:#FDD331;}*/
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 10px;
+	background-color: aquamarine;
+}
+
+.gallery-item {
+	color: #fff;
+	margin-bottom: 40px;
+	border: 1px solid black;
+	padding: 10px;
+	text-align:center;
+	background-color: #000000;
+}
+
+.gallery-item p {
+	background-color: skyblue;
+	padding: 5px;
+}
+
+
+
 
 main {}
 

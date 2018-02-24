@@ -12,13 +12,15 @@
 	}
 	.navigation.responsive{}
 	.navigation {
+		display:flex;
+		justify-content: space-around;
 		background-color: #386FA4;
 		overflow: hidden;
 		text-align: center;
 	}
 
 	.navigation li {
-		display: inline-block;
+		display:block;
 		background-color: #386FA4;
 		margin-left: .25rem;
 	}
@@ -36,7 +38,7 @@
 
 	article {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 	}
 
 	.town-article {
@@ -79,4 +81,24 @@
 		display: ;
 	}
 
-	/*nav ul {display:inline;}*/
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		background-color: aquamarine;
+	}
+
+	.gallery-item {
+		color: #fff;
+		margin-bottom: 40px;
+		border: 1px solid black;
+		padding: 10px;
+		text-align:center;
+		background-color: #000000;
+	}
+
+	.gallery-item p {
+		background-color: skyblue;
+		padding: 5px;
+	}
+}
