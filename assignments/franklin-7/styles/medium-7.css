@@ -76,7 +76,7 @@
 	}
 
 	#forecast {
-		display: block;
+		display: flex;
 	}
 
 	/*nav ul {display:inline;}*/
