@@ -9,7 +9,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		padding: 10px;
-		background-color: aquamarine;
+		background-color: #707070;
 	}
 
 
@@ -19,17 +19,23 @@
 		border: 1px solid black;
 		padding: 10px;
 		text-align:center;
-		background-color: #000000;
+		background-color: #454545;
 	}
 
 	.gallery-item p {
-		background-color: skyblue;
+		background-color: #707070;
 		padding: 5px;
 	}
 
 
-	.gallery-item:hover figure{
-		box-shadow: 5px 5px #fff;
+	.gallery-item:hover figure {
+		box-shadow: 5px 5px 10px #FAFAFA;
+	}
+	.gallery-item:hover p {
+		box-shadow: 5px 5px 10px #FAFAFA;
+	}
+	.gallery-item:hover h2 {
+		box-shadow: 5px 5px 10px #FAFAFA;
 	}
 	}
 }	/* 64em is also 1028px when basefont is 16px */
