@@ -66,6 +66,9 @@ header img.logo {
 	top: 1rem;
 	right: 1.25rem;
 }
+.hamburger:hover{
+	color: #FDD331;
+}
 
 .navigation {
 	list-style: none;
