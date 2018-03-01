@@ -11,23 +11,27 @@
 		display: none;
 	}
 	.navigation.responsive{}
+
 	.navigation {
 		display:flex;
 		justify-content: space-around;
+		flex-direction: crow;
 		background-color: #707070;
 		overflow: hidden;
 		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 20px;
 	}
 
 	.navigation li {
-		display:block;
+		display: block;
 		background-color: #707070;
 		margin-left: .25rem;
 	}
 	.navigation a {
 		padding: .5rem;
 		text-align: center;
-		display: block;
 		text-decoration: none;
 		font-weight: 800;
 		color: #eee;
@@ -78,7 +82,7 @@
 	}
 
 	#forecast {
-		display: ;
+		display: block;
 	}
 
 

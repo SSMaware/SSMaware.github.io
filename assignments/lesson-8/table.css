@@ -7,47 +7,75 @@ header title {
 	height: 50px;
 }
 
-html {font-family: sans-serif;
+html {
+	font-family: Ubuntu, sans-serif;
 }
 
-table,
-
 table {
-	border: 2px solid #000000;
+	border: 2px solid lightgray;
 	letter-spacing: 1px;
 	font-size: 0.8rem;
 	width: 100%;
 	border-collapse: collapse;
 	background-color: #7fb9c2;
-	margin-left: auto;
-	margin-right: auto;
+}
+td {
+	font-size: 15px;
+	color: darkslategray;
 }
 
-td, th {
+td,
+th {
 	text-align: center;
-	background-color: #FDD331;
-	border: 1px solid rgb(190,190,190);
+	border: 1px solid rgb(190, 190, 190);
 	padding: 10px 20px;
 }
+
 th {
 	background-color: #628ca6;
 }
-tr:nth-child(even) td {
+
+tr:nth-child(odd) td {
 	background-color: #e7f0ed;
 }
-tr:nth-child(odd) td {
+
+tr:nth-child(even) td {
 	background-color: #e7ffed;
 }
-caption {
-	padding: 10px;
-}
 
-tfoot {
+tr:nth-child(odd) th {
 	background-color: #7fb9c2;
 }
 
-.shadow :table {
+tr:nth-child(even) th {
+	color: white;
+}
+
+tfoot {
+	font-weight: 100;
+	font-size: 12px;
+	color: darkslategray;
+}
+
+.shadow {
 	box-shadow: 5px 5px 10px #628ca6;
 }
 
-white square
+#special {
+	background-color: #628ca6;
+	color: white;
+	font-weight: 500;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#tableTitle {
+	font-size: 30px;
+}
+
+#bold{
+	font-weight: bolder;
+	font-size: 16px;
+}

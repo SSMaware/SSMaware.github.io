@@ -1,5 +1,9 @@
 @media only screen and (min-width: 64rem) {
 
+	body{
+		width: 90%;
+		margin: 0 auto;
+	}
 	.left-column, .right-column{
 		width: 50%;
 		padding: 15px;
