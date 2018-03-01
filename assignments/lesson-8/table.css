@@ -12,13 +12,18 @@ html {
 }
 
 table {
-	border: 2px solid lightgray;
+	border: 1px solid lightgray;
 	letter-spacing: 1px;
 	font-size: 0.8rem;
-	width: 100%;
+	width: 50%;
 	border-collapse: collapse;
 	background-color: #7fb9c2;
+	width:inherit;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
 }
+
 td {
 	font-size: 15px;
 	color: darkslategray;
@@ -57,7 +62,7 @@ tfoot {
 	color: darkslategray;
 }
 
-.shadow {
+#shadow {
 	box-shadow: 5px 5px 10px #628ca6;
 }
 
@@ -75,7 +80,7 @@ tfoot {
 	font-size: 30px;
 }
 
-#bold{
+#bold {
 	font-weight: bolder;
 	font-size: 16px;
 }
