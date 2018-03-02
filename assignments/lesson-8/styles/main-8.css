@@ -27,9 +27,6 @@ header title {
 	height: 50px;
 }
 
-#main-image {
-	width: auto;
-}
 
 h1 {
 	font-size: 50px;
@@ -66,7 +63,8 @@ header img.logo {
 	top: 1rem;
 	right: 1.25rem;
 }
-.hamburger:hover{
+
+.hamburger:hover {
 	color: #FDD331;
 }
 
@@ -125,7 +123,7 @@ nav ul li a:hover:not(.active) {
 	margin-bottom: 40px;
 	border: 1px solid black;
 	padding: 10px;
-	text-align:center;
+	text-align: center;
 	background-color: #454545;
 }
 
@@ -148,8 +146,9 @@ main figure {
 
 main figure img {
 	width: 100%;
-}
+	border: 5px solid #707070;
 
+}
 
 section {
 	text-align: center;
