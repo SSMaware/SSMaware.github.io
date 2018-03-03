@@ -73,28 +73,29 @@
 			<fieldset>
 				<legend><span>Personal Information</span></legend>
 				<br>
-			<form action=""method="post"enctype="multipart/form-data"name="data" id="info"></form>
+				<form action="" method="post" enctype="multipart/form-data" name="data" id="info"></form>
 				<label><span>First Name:</span><input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" required></label>
-			<br><br>
+				<br><br>
 				<label><span>Last Name:</span><input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
-			<br><br>
+				<br><br>
 				<label><span>E-mail:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required ></label>
-			<br><br>
+				<br><br>
 				<label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
-			<br><br>
-				<label><span>Zip Code:</span><input type="text" name="firstname" value=""></label>
-			<br><br>
+				<br><br>
+				<label><span>Zip Code:</span><input name="firstname" type="num"  value="" pattern="[0-9] {6}" required></label>
+				<br><br>
 			</fieldset>
+
 			<fieldset>
 				<legend><span>Storm Information</span></legend>
 				<br>
-			<label><span>Storm Type:</span><input type="text" name="lastname" value=""></label>
-			<br><br>
-			<label><span>Storm Severity:</span><input type="text" name="lastname" value=""></label>
-			<br><br>
-			<label><span>Storm Region:</span><input type="text" name="lastname" value=""></label>
-			<br><br>
-			<label><span>User In-Danger Level:</span>
+				<label><span>Storm Type:</span><input type="text" name="lastname" value=""></label>
+				<br><br>
+				<label><span>Storm Severity:</span><input type="text" name="lastname" value=""></label>
+				<br><br>
+				<label><span>Storm Region:</span><input type="text" name="lastname" value=""></label>
+				<br><br>
+				<label><span>User In-Danger Level:</span>
 			<p>Yes</p>
 			<input type="radio" name="Yes" value="Yes">
 			<p>Maybe</p>
@@ -103,13 +104,16 @@
 			<input type="radio" name="No" value="No">
 				<br><br>
 				</fieldset>
+
+				<br><br>
 				<fieldset>
 					<legend><span>Additional Information</span></legend>
 					<br>
 				<label><span>Additional Information or Comments:</span><input type="text" name="lastname" value=""></label>
-			<br><br>
-			<input type="submit" value="Submit">
-				</fieldset>
+				<br><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+				<br><br>
 		</form>
 
 
