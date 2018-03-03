@@ -72,26 +72,29 @@
 			<!--<p>Progree:<progress value="3" max="5"></progress><p>-->
 			<fieldset>
 				<legend><span>Personal Information</span></legend>
+				<br>
 			<form action=""method="post"enctype="multipart/form-data"name="data" id="info"></form>
-			<label>First Name:<input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<label><span>First Name:</span><input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 			<br><br>
-			<label>Last Name:<input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<label><span>Last Name:</span><input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 			<br><br>
-			<label>E-mail:<input name="email" type="email" value="" placeholder="zen@gmail.com" required ></label>
+				<label><span>E-mail:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required ></label>
 			<br><br>
-			<label>Phone Number:<input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
+				<label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
 			<br><br>
-			<label>Zip Code:<input type="text" name="firstname" value=""></label>
+				<label><span>Zip Code:</span><input type="text" name="firstname" value=""></label>
 			<br><br>
 			</fieldset>
-
-			<label>Storm Type:<input type="text" name="lastname" value=""></label>
+			<fieldset>
+				<legend><span>Storm Information</span></legend>
+				<br>
+			<label><span>Storm Type:</span><input type="text" name="lastname" value=""></label>
 			<br><br>
-			<label>Storm Severity:<input type="text" name="lastname" value=""></label>
+			<label><span>Storm Severity:</span><input type="text" name="lastname" value=""></label>
 			<br><br>
-			<label>Storm Region:<input type="text" name="lastname" value=""></label>
+			<label><span>Storm Region:</span><input type="text" name="lastname" value=""></label>
 			<br><br>
-			<label>User In-Danger Level:
+			<label><span>User In-Danger Level:</span>
 			<p>Yes</p>
 			<input type="radio" name="Yes" value="Yes">
 			<p>Maybe</p>
@@ -99,9 +102,14 @@
 			<p>No</p>
 			<input type="radio" name="No" value="No">
 				<br><br>
-			<label>Additional Information or Comments:<input type="text" name="lastname" value=""></label>
+				</fieldset>
+				<fieldset>
+					<legend><span>Additional Information</span></legend>
+					<br>
+				<label><span>Additional Information or Comments:</span><input type="text" name="lastname" value=""></label>
 			<br><br>
 			<input type="submit" value="Submit">
+				</fieldset>
 		</form>
 
 
