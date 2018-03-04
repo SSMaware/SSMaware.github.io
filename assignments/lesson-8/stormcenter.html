@@ -74,25 +74,25 @@
 				<legend><span><strong>Personal Information</strong></span></legend>
 				<br>
 
-				<label><span>First Name:</span><input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" ></label>
+				<label><span>First Name:</span><input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 				<br><br>
-				<label><span>Last Name:</span><input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" ></label>
+				<label><span>Last Name:</span><input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 				<br><br>
-				<label><span>E-mail:</span><input name="email" type="email" value="" placeholder="zen@gmail.com"></label>
+				<label><span>E-mail:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
 				<br><br>
-				<label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" ></label>
+				<label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
 				<br><br>
-				<label><span>Zip Code:</span><input type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -] {6,10}" ></label>
+				<label><span>Zip Code:</span><input type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -] {6,10}" required></label>
 				<br><br>
 			</fieldset>
 			<br><br>
 			<fieldset>
 				<legend><span><strong>Storm Information</strong></span></legend>
 				<br><br>
-				<label><span>Storm Date:</span><input type="date" name="storm" value=""></label>
+				<label><span>Storm Date:</span><input type="date" name="storm" value="" required></label>
 				<br><br>
 				<label><span>Storm Type:</span></label>
-				<input list="list">
+				<input list="list" required>
 				<datalist id='list'>
 						<option>Ice</option>
 						<option>Hail</option>
@@ -108,12 +108,12 @@
 					</datalist>
 				<br><br>
 				<label for="rating"><span>Storm Severity: 1 </span></label>
-				<input type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+				<input type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required>
 				<span id="ratingvalue">10</span><br>
 				<br><br>
 				<label><span>Storm Region:</span></label>
-				<select>
-					<option selected disabled>Select Region</option>
+				<select required>
+					<option selected disabled>Select Region</option >
 					<option value="Franklin">Franklin</option>
 					<option value="Greenville">Greenville</option>
 					<option value="Springfield">Springfield</option>
@@ -132,7 +132,7 @@
 			<fieldset>
 				<legend><span><strong>Additional Information or Comments</strong></span></legend>
 				<br>
-				<textarea></textarea>
+				<textarea required></textarea>
 				<br><br>
 				<input type="submit" value="Submit">
 			</fieldset>
