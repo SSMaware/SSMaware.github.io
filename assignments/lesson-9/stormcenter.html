@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Weather Facts</title>
+	<meta name="author" content="Sandra S. Marler">
+
+	<meta name="description" content="Weather Facts Page">
+	<!-- external style references in the proper cascading order -->
+
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+
+	<link href="styles/main-9.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+
+	<link href="styles/medium-9.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+
+	<link href="styles/large-9.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="images/sunflowersungraphic-opt.png" alt="sitelogo">
+		<div id="siteTitle">
+			<h1><strong> Weather Facts</strong></h1>
+		</div>
+		<div class="subheading">Weather Information at your Fingertips!</div><br>
+
+
+	</header>
+	<nav>
+		<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+		<div id="nav">
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="franklin-9.html">Franklin</a></li>
+				<li><a href="#">Greenville</a></li>
+				<li><a href="#">Springfield</a></li>
+				<li><a href="stormcenter.html">StormCenter</a></li>
+				<li><a href="gallery-9.html">Gallery</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+
+		<figure class="skybanner">
+			<picture>
+				<source media="(min-width: 64rem)" srcset="images/sky-opt-lrg.jpg">
+				<source media="(min-width: 37.5em)" srcset="images/sky-opt-med.jpg">
+				<img src="images/sky-opt-sm.jpg" alt="banner">
+			</picture>
+			<br>
+			<br>
+			<br>
+			<h1>Storm Center</h1>
+		</figure>
+
+
+		<br>
+		<form action="thanks.html">
+
+			<!--<p>Progree:<progress value="3" max="5"></progress><p>-->
+			<fieldset>
+				<legend><span><strong>Personal Information</strong></span></legend>
+				<br>
+
+				<label><span>First Name:</span><input name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<br><br>
+				<label><span>Last Name:</span><input name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<br><br>
+				<label><span>E-mail:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
+				<br><br>
+				<label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
+				<br><br>
+				<label><span>Zip Code:</span><input type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -] {6,10}" required></label>
+				<br><br>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend><span><strong>Storm Information</strong></span></legend>
+				<br><br>
+				<label><span>Storm Date:</span><input type="date" name="storm" value="" required></label>
+				<br><br>
+				<label><span>Storm Type:</span></label>
+				<input list="list" required>
+				<datalist id='list'>
+						<option>Ice</option>
+						<option>Hail</option>
+						<option>Lightning</option>
+						<option>Thunderstorm</option>
+						<option>Hurricane</option>
+						<option>Tropical</option>
+						<option>Derecho</option>
+						<option>Tornado</option>
+						<option>Bizzard</option>
+						<option>Flash Flood</option>
+
+					</datalist>
+				<br><br>
+				<label for="rating"><span>Storm Severity: 1 </span></label>
+				<input type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required>
+				<span id="ratingvalue">10</span><br>
+				<br><br>
+				<label><span>Storm Region:</span></label>
+				<select required>
+					<option selected disabled>Select Region</option >
+					<option value="Franklin">Franklin</option>
+					<option value="Greenville">Greenville</option>
+					<option value="Springfield">Springfield</option>
+				</select>
+				<br><br>
+				<label><span>User In-Danger Level:</span></label>
+				<br><br>
+				<label><span> Yes </span><input type="radio" name="level" value="Yes"></label>
+				<br><br>
+				<label><span> Maybe </span><input type="radio" name="level" value="Maybe"></label>
+				<br><br>
+				<label><span> No </span><input type="radio" name="level" value="No"></label>
+				<br><br>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend><span><strong>Additional Information or Comments</strong></span></legend>
+				<br>
+				<textarea required></textarea>
+				<br><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+			<br><br>
+		</form>
+
+	</main>
+
+	<footer>
+		<aside>
+			<div>Weather Facts</div>
+			<div>123 Main St.</div>
+			<div>Franklin, MU 83454</div>
+			<div>(999)999.9999</div>
+			<div>contact@theurl.com</div>
+			<p class="footer-bar"> <small> <a> &copy; *All Rights Reserved * 2020 * Weather Facts * Sandra S. Marler * Terms of use link *
+<span id="current-date">Date</span></a></small></p>
+		</aside>
+	</footer>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
