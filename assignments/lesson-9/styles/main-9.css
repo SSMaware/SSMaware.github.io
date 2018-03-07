@@ -13,7 +13,7 @@
 }
 
 body {
-	font-size: 16px;
+	font-size: 18px;
 	color: #000000;
 	font-family: 'Roboto', sans-serif;
 }
@@ -110,6 +110,15 @@ header img.logo {
 
 nav ul li a:hover:not(.active) {
 	color:#FDD331;}*/
+.bord {
+	border 4px;
+	background-color: #386FA4;
+}
+.square{
+	background-color: #FDD331;
+	padding: 0px;
+
+}
 
 .gallery-grid {
 	display: grid;

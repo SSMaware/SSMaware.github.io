@@ -106,4 +106,7 @@
 		background-color: #707070;
 		padding: 5px;
 	}
+	#length {
+		width:600px;
+	}
 }
