@@ -11,7 +11,9 @@
 #forecast {
 	display: none;
 }
-
+.h3{
+	text-align: center;
+}
 body {
 	font-size: 18px;
 	color: #000000;
