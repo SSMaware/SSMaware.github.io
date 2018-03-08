@@ -11,9 +11,7 @@
 #forecast {
 	display: none;
 }
-.h3{
-	text-align: center;
-}
+
 body {
 	font-size: 18px;
 	color: #000000;
@@ -43,7 +41,9 @@ h2 {
 	background-color: #FDD331;
 	color: #000000;
 }
-
+h4{
+	text-align: center;
+}
 header img.logo {
 	margin-left: 5px;
 	width: 65px;
