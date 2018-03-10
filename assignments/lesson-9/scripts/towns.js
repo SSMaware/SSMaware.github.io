@@ -2,14 +2,18 @@ var main = document.querySelector("main");
 var section = document.createElement("section");
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
-request.open('GET', 'http://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/MN/Franklin.json', true);
-request.responseType = 'json';
-request.send();
 
-request.onload = function () {
-	var weather = request.response;
-	weatherInfo(weather);
+
+var weatherObject = new XMLHttpRequest();
+
+weatherObject.open('GET', 'http://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/MN/Franklin.json', true);
+
+weatherObject.send();
+
+weatherObject.onload = function () {
+	var weatherInfo = JSON.parse(weatherObject.responseText);
+	console.log(weatherInfo);
+	document.getElementById('place').innerHTML= weatherInfo.
 }
 
 function weatherInfo(jsonObj) {
