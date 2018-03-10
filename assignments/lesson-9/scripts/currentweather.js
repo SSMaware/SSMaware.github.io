@@ -11,8 +11,8 @@ request.send();
 request.onload = function () {
 	var weather = request.response;
 	weatherInfo(weather);
-	/*var weather = JSON.parse(request.responseText);
-	weatherInfo(weather);*/
+	document.getElementById('place').innerHTML = weather.current_observation.display_location.full;
+
 }
 
 function weatherInfo(jsonObj) {
