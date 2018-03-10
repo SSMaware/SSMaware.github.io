@@ -18,6 +18,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.superherosquad {
+	text-align: center;
+	margin-left: 25;
+}
+
 header title {
 	background-color: #FFFFFF;
 	width: auto;

@@ -10,4 +10,8 @@ weatherObject.onload = function () {
 	document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
 	document.getElementById('currentTemperature').innerHTML = weatherInfo.current_observation.temp_f;
 	document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+	document.getElementById('feelsLike').innerHTML = weatherInfo.current_observation.feelslike_f;
+	document.getElementById('precipitation').innerHTML = weatherInfo.current_observation.precip_today_in;
+	document.getElementById('s').innerHTML = weatherInfo.current_observation.wind_mph;
+	document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_string;
 }

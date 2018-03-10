@@ -13,7 +13,7 @@ weatherObject.send();
 weatherObject.onload = function () {
 	var weatherInfo = JSON.parse(weatherObject.responseText);
 	console.log(weatherInfo);
-	document.getElementById('place').innerHTML= weatherInfo.
+	document.getElementById('place').innerHTML = weatherInfo.
 }
 
 function weatherInfo(jsonObj) {
@@ -31,7 +31,7 @@ function weatherInfo(jsonObj) {
 			myp1.textContent = "Motto: " + " " + townsArray[i].motto;
 			myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
 			myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
-			myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall +  " " + "inches";
+			myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
 
 			mydiv.appendChild(myh1);
 			mydiv.appendChild(myp1);
