@@ -23,11 +23,11 @@ function weatherInfo(jsonObj) {
 			var myp3 = document.createElement("p");
 			var myp4 = document.createElement("p");
 
-			myh1.textContent = "Name:" +townsArray[i].name;
-			myp1.textContent = "Motto:" + townsArray[i].motto;
-			myp2.textContent = "Year Founded:" + townsArray[i].yearFounded;
-			myp3.textContent = "Current Population:" + townsArray[i].currentPopulation;
-			myp4.textContent = "Events:" + townsArray[i].averageRainfall;
+			myh1.textContent = townsArray[i].name + " " + "City";
+			myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+			myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+			myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+			myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall +  " " + "inches";
 
 			mydiv.appendChild(myh1);
 			mydiv.appendChild(myp1);
