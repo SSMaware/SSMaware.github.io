@@ -3,7 +3,7 @@ var section = document.createElement("section");
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
-request.open('GET', requestURL);
+request.open('GET', 'http://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/MN/Franklin.json', true);
 request.responseType = 'json';
 request.send();
 
