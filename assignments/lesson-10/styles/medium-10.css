@@ -110,14 +110,13 @@
 		width:600px;
 	}
 	.home-grid, {
-		display: flex;
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		padding: 10px;
-		height:200px;
+		height:400px;
 
 	}
 	.home-item {
-		display: inline-flex;
 		color: #fff;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-bottom: 40px;
@@ -127,7 +126,10 @@
 		background-color: #454545;
 
 	}
-	section{
+	section {
+		text-align: center;
+	}
+section{
 		display:inline-flex;
 	}
 	article{
@@ -143,4 +145,22 @@
 		height: 300px;
 		padding: 5px;
 	}
+.mainpage-grid {
+	display: grid;
+	column-count: 2;
+	padding: 10px;
+	background-color: #707070;
+}
+.mainpage-item {
+	color: #fff;
+	margin-bottom: 40px;
+	border: 1px solid black;
+	padding: 10px;
+	text-align:center;
+	background-color: #454545;
+}
+.mainpage-item p {
+	background-color: #707070;
+	padding: 5px;
+}
 }
