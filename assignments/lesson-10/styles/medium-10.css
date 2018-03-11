@@ -1,0 +1,112 @@
+@media only screen and (min-width: 37.5em) {
+
+	/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+	/*nav button {
+		display:none;
+	}*/
+	/* 35em is also 560px when basefont is 16px */
+	/*@media only screen and (min-width: 35rem) {
+	}*/
+	.hamburger {
+		display: none;
+	}
+	.navigation.responsive{}
+
+	.navigation {
+		display:flex;
+		justify-content: space-around;
+		flex-direction: crow;
+		background-color: #707070;
+		overflow: hidden;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+
+	.navigation li {
+		display: block;
+		background-color: #707070;
+		margin-left: .25rem;
+	}
+	.navigation a {
+		padding: .5rem;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 800;
+		color: #eee;
+	}
+	.navigation a:hover {
+		color: #FDD331;
+	}
+
+	article {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.town-article {
+		width: 100%;
+		height: auto;
+	}
+
+	.left-column, .right-column{
+		width: 50%;
+		padding: 5px;
+	}
+
+	table,
+	td,
+	th {
+		border: 2px solid gray
+	}
+
+	table {
+		border: 1px solid gray;
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #FDD331;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	td {
+		text-align: center;
+		background-color: #FDD331;
+	}
+
+	th {
+		text-align: center;
+		background-color: #FDD331;
+
+	}
+
+	#forecast {
+		display: block;
+	}
+
+
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		background-color: #707070;
+	}
+
+	.gallery-item {
+		color: #fff;
+		margin-bottom: 40px;
+		border: 1px solid black;
+		padding: 10px;
+		text-align:center;
+		background-color: #454545;
+	}
+
+	.gallery-item p {
+		background-color: #707070;
+		padding: 5px;
+	}
+	#length {
+		width:600px;
+	}
+}
