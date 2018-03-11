@@ -20,12 +20,3 @@ weatherObject.onload = function () {
 	document.getElementById('currentObservation').innerHTML = weatherInfo.current_observation.ob_url;
 }
 
-/*
-The current temperature in Fahrenheit from conditions.
-The image icon representing the current weather from conditions.
-The current wind speed in miles per hour from conditions.
-The current weather string, e.g., Partly Cloudy, from conditions.
-
-The text description forecast for the most current period in Fahrenheit, e.g., Partly cloudy. Lows overnight in the upper 70s.
-
-*/
