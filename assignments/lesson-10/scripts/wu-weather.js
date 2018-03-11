@@ -17,6 +17,6 @@ weatherObject.onload = function () {
 	document.getElementById('precipitation').innerHTML = weatherInfo.current_observation.precip_today_in;
 	document.getElementById('s').innerHTML = weatherInfo.current_observation.wind_mph;
 	document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_string;
-	document.getElementById('currentObservation').innerHTML = weatherInfo.current_observation.ob_url;
+	/*document.getElementById('currentObservation').innerHTML = weatherInfo.current_observation.ob_url;*/
 }
 
