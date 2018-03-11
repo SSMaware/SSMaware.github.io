@@ -134,13 +134,12 @@ nav ul li a:hover:not(.active) {
 	background-color: #707070;
 }
 .home-grid {
-	display: flex;
+	display: inline-flex;
 	grid-template-columns: 1fr;
 	padding: 10px;
 }
 .home-item {
 	color: #fff;
-	grid-template-columns: 1fr;
 	margin-bottom: 40px;
 	border: 1px solid black;
 	padding: 10px;
@@ -195,10 +194,6 @@ section {
 	text-align: center;
 }
 
-article {
-	display: flex;
-	flex-direction: column;
-}
 
 .town-article {
 	width: 100%;

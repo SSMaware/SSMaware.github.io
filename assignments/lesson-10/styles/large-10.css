@@ -9,15 +9,13 @@
 		padding: 15px;
 	}
 	.home-grid, {
-		display: flex;
-		grid-template-columns: 1fr 1fr 1fr;
+		display: inline-flex;
 		padding: 10px;
 
 	}
 	.home-item {
-		display: flex;
+		display: inline-flex;
 		color: #fff;
-		grid-template-columns: 1fr 1fr 1fr;
 		margin-bottom: 40px;
 		border: 1px solid black;
 		padding: 10px;
@@ -25,6 +23,10 @@
 		background-color: #454545;
 
 	}
+	section{
+		display:inline-flex;
+	}
+
 	article{
 		display: inline-flex;
 

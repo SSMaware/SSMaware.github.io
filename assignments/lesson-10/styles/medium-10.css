@@ -113,10 +113,11 @@
 		display: flex;
 		grid-template-columns: 1fr 1fr 1fr;
 		padding: 10px;
+		height:200px;
 
 	}
 	.home-item {
-		display: flex;
+		display: inline-flex;
 		color: #fff;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin-bottom: 40px;
@@ -125,6 +126,9 @@
 		text-align: center;
 		background-color: #454545;
 
+	}
+	section{
+		display:inline-flex;
 	}
 	article{
 		display: inline-flex;
