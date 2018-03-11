@@ -3,19 +3,6 @@ var section = document.createElement("section");
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-
-var weatherObject = new XMLHttpRequest();
-
-weatherObject.open('GET', 'http://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/MN/Franklin.json', true);
-
-weatherObject.send();
-
-weatherObject.onload = function () {
-	var weatherInfo = JSON.parse(weatherObject.responseText);
-	console.log(weatherInfo);
-	document.getElementById('place').innerHTML = weatherInfo.
-}
-
 function weatherInfo(jsonObj) {
 	var townsArray = jsonObj["towns"];
 	for (var i = 0; i < townsArray.length; i++) {
