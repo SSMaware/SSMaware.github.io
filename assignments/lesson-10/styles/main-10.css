@@ -174,7 +174,7 @@ nav ul li a:hover:not(.active) {
 
 .mainpage-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	padding: 10px;
 	background-color: #707070;
 }
