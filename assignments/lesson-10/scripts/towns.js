@@ -1,11 +1,19 @@
 var main = document.querySelector("main");
 var section = document.createElement("section");
+var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
+
 request.open('GET', "https://byui-cit230.github.io/weather/data/towndata.json", true);
+request.responseType = 'json';
 request.send();
 request.onload = function () {
-	var request = JSON.parse(requestURL.responseText);
-	var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+	var weather = request.response;
+	weatherInfo(weather);
+	document.getElementByID('place').innerHTML=weather.current_observation.display_location.full;
+	JSON.parse(requestURL.responseText);
+
+
+
 	function weatherInfo(jsonObj) {
 		var townsArray = jsonObj["towns"];
 		var mydiv = document.createElement("div");
