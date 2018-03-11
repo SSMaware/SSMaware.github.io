@@ -1,20 +1,18 @@
-var main = document.querySelector("main");
-var section = document.createElement("section");
-var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+var main = document.querySelector('main');
+var section = document.createElement('section');
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
-
-request.open('GET', "https://byui-cit230.github.io/weather/data/towndata.json", true);
+request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-	var weather = request.response;
-	weatherInfo(weather);
-	document.getElementByID('place').innerHTML=weather.current_observation.display_location.full;
-	JSON.parse(requestURL.responseText);
+var cities =request.response;
+	poplulateHeader(cityNames);
+	cityNames(cityNames);
+}
 
-
-
-	function weatherInfo(jsonObj) {
+{
+	function request(jsonObj) {
 		var townsArray = jsonObj["towns"];
 		var mydiv = document.createElement("div");
 		var myh1 = document.createElement("h1");
