@@ -109,4 +109,34 @@
 	#length {
 		width:600px;
 	}
+	.home-grid, {
+		display: flex;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 10px;
+
+	}
+	.home-item {
+		display: flex;
+		color: #fff;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-bottom: 40px;
+		border: 1px solid black;
+		padding: 10px;
+		text-align: center;
+		background-color: #454545;
+
+	}
+	article{
+		display: inline-flex;
+
+	}
+	.fn, gv, sf {
+		image-orientation: center;
+	}
+
+	.home-item p {
+		background-color: #707070;
+		height: 300px;
+		padding: 5px;
+	}
 }
