@@ -126,7 +126,7 @@
 		background-color: #454545;
 
 	}
-	section {
+	/*section {
 		text-align: center;
 	}
 section{
@@ -135,7 +135,7 @@ section{
 	article{
 		display: inline-flex;
 
-	}
+	}*/
 	.fn, gv, sf {
 		image-orientation: center;
 	}

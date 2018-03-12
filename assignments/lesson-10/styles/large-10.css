@@ -43,18 +43,22 @@
 
 
 	}
-	section {
+	/*section {
 		text-align: center;
-	}
+	}*/
 
-	section{
+	/* #four {
 		display:flex;
 	}
 
-	article{
+	#three {
+		display:flex;
+	}
+
+	#two {
 		display: flex;
 
-	}
+	} */
 	.fn, gv, sf {
 		image-orientation: center;
 	}
