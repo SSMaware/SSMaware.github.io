@@ -142,7 +142,7 @@ nav ul li a:hover:not(.active) {
 	background-color: #707070;
 }
 
-.home-grid {
+/*.home-grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 10px;
@@ -158,16 +158,16 @@ nav ul li a:hover:not(.active) {
 
 }
 
-.fn,
-gv,
-sf {
-	image-orientation: center;
-}
-
 .home-item p {
 	background-color: #707070;
 	height: 300px;
 	padding: 5px;
+}
+*/
+.fn,
+gv,
+sf {
+	image-orientation: center;
 }
 
 }
