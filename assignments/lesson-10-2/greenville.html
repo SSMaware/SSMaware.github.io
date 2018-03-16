@@ -63,74 +63,80 @@
 		<br>
 		<section id="forecast">
 		</section>
-		<section>
 
-			<!--
+		<!--
 			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 			<link href="table.css" rel="stylesheet">
 -->
+		<table id="shadow">
+			<thead>
+				<tr>
+					<th id="tableTitle" colspan="3"><strong>Greenville Weather Data</strong></th>
+				</tr>
+				<tr id="bold">
+					<th>Period</th>
+					<th>Sales</th>
+					<th>Sales Goal</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>August</td>
+					<td>$3,590</td>
+					<td>$4,000</td>
+				</tr>
+				<tr>
 
+					<td>September</td>
+					<td>$4,420</td>
+					<td>$5,000</td>
+				</tr>
+				<tr>
 
-			<body>
-				<br>
-				<main>
-					<table id="shadow">
-						<thead>
-							<tr>
-								<th id="tableTitle" colspan="3"><strong>Greenville Weather Data</strong></th>
-							</tr>
-							<tr id="bold">
-								<th>Period</th>
-								<th>Sales</th>
-								<th>Sales Goal</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>August</td>
-								<td>$3,590</td>
-								<td>$4,000</td>
-							</tr>
-							<tr>
+					<td>October</td>
+					<td>$4,870</td>
+					<td>$5,000</td>
+				</tr>
+				<tr>
 
-								<td>September</td>
-								<td>$4,420</td>
-								<td>$5,000</td>
-							</tr>
-							<tr>
+					<td>November</td>
+					<td>$8,610</td>
+					<td id="special">$7,500</td>
+				</tr>
+				<tr>
+					<td class="italic">Black Friday</td>
+					<td colspan="2">$3,200</td>
+				</tr>
+				<tr>
+					<td>Decemeber</td>
+					<td>$6,820</td>
+					<td>$7,500</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="3">Compiled 12.20.2020 by bRauls</th>
+				</tr>
+			</tfoot>
+		</table>
 
-								<td>October</td>
-								<td>$4,870</td>
-								<td>$5,000</td>
-							</tr>
-							<tr>
-
-								<td>November</td>
-								<td>$8,610</td>
-								<td id="special">$7,500</td>
-							</tr>
-							<tr>
-								<td class="italic">Black Friday</td>
-								<td colspan="2">$3,200</td>
-							</tr>
-							<tr>
-								<td>Decemeber</td>
-								<td>$6,820</td>
-								<td>$7,500</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th colspan="3">Compiled 12.20.2020 by bRauls</th>
-							</tr>
-						</tfoot>
-					</table>
+		<section class="currentweatherstats">
+			<h3>Weather Summary for <span id="Gplace"> City, State</span></h3>
+			<p>Current Temperature is: <span id="GcurrentTemperature"></span>&deg; F</p>
+			<p>Weather String: <span id="Gweatherstring"></span></p>
+			<img id="Gw_icon" src="" alt="current weather">
+			<p>Feels Like: <span id="GfeelsLike"> </span>&deg; F</p>
+			<p>Precipitation: <span id="Gprecipitation"> <strong>&#37;</strong></span></p>
+			<p>Wind Speed: <span id="Gs"><strong> </strong></span> mph</p>
+			<p>Wind Chill: <span id="Gwindchill"><strong> &#176; </strong></span></p>
+			<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
+			<br>
 
 		</section>
 		<section>
 			<article>
 				<div class="right-column">
-					<img class="town-article" src="images/franklincity-medium.jpg" alt="City News">
+					<img class="town-article" src="images/misty-weather-opt.jpg" alt="City News">
 				</div>
 				<div class="left-column">
 					<h4>Greenville City</h4>
@@ -138,20 +144,10 @@
 					</p>
 				</div>
 			</article>
-			<!--<article>
-				<div class="home-item">
-					<div class="middle">
-						<figure><img class="town-article" src="images/rainbow-opt.jpg" alt="Greenville City"></figure>
-						<h2>Greenville</h2>
-						<p>
-						</p>
-					</div>
-				</div>
-			</article>-->
+
 		</section>
 
 	</main>
-
 	<footer>
 		<aside>
 			<div>Weather Facts</div>
@@ -165,6 +161,7 @@
 	</footer>
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/wu-greenville.js"></script>
 	<script>
 		var main = document.querySelector('main');
 		var article = document.createElement('article');
@@ -225,7 +222,5 @@
 		}
 	</script>
 
-
 </body>
-
 </html>

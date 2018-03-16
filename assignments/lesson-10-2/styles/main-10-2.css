@@ -353,3 +353,14 @@ tfoot {
 	font-weight: bolder;
 	font-size: 16px;
 }
+
+.divBox{
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 3px;
+	text-align: center;
+	background-color: lightblue;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	width: 35%;
+}
