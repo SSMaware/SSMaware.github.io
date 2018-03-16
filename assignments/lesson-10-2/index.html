@@ -62,7 +62,7 @@
 		</figure>
 		<br>
 		<br>
-		<a class="superherosquad" href="/assignments/lesson-10-2/heroes.html">Super Hero Squad</a>
+		<!--<a class="superherosquad" href="/assignments/lesson-10-2/heroes.html">Super Hero Squad</a>-->
 		<br>
 
 
@@ -80,6 +80,227 @@
 			</div>
 		</article>
 
+
+		<article id="">
+			<div class="right-column">
+				<img class="town-article" src="images/snow-park-opt.jpg" alt="City News">
+			</div>
+			<div class="left-column">
+				<h3>Franklin City</h3>
+				<div>
+				</div>
+				<p>
+					<script>
+						var main = document.querySelector('main');
+						var article = document.createElement('article');
+						article.className = "articleweather";
+
+						var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+						var request = new XMLHttpRequest();
+						request.open('GET', requestURL);
+						request.responseType = 'json';
+						request.send();
+
+						request.onload = function() {
+							var towns = request.response;
+							showTowns(towns);
+						}
+
+						function showTowns(jsonObj) {
+							var townsArray = jsonObj['towns'];
+
+							for (var i = 0; i < townsArray.length; i++) {
+
+								if (townsArray[i].name == "Franklin") {
+									var mydiv = document.createElement("div");
+									var myh1 = document.createElement("h1");
+									var myp1 = document.createElement("p");
+									var myp2 = document.createElement("p");
+									var myp3 = document.createElement("p");
+									var myp4 = document.createElement("p");
+									var myp5 = document.createElement("p");
+									var myList = document.createElement('ul');
+
+									myh1.textContent = townsArray[i].name + " " + "City";
+									myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+									myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+									myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+									myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
+									myp5.textContent = "Events";
+
+
+									var eventsWeather = townsArray[i].events;
+									for (var j = 0; j < eventsWeather.length; j++) {
+										var listItem = document.createElement('li');
+										listItem.textContent = eventsWeather[j];
+										myList.appendChild(listItem);
+									}
+
+									mydiv.appendChild(myh1);
+									mydiv.appendChild(myp1);
+									mydiv.appendChild(myp2);
+									mydiv.appendChild(myp3);
+									mydiv.appendChild(myp4);
+									mydiv.appendChild(myp5);
+									mydiv.appendChild(myList);
+									article.appendChild(mydiv);
+								}
+							}
+							main.appendChild(article);
+						}
+					</script>
+				</p>
+			</div>
+		</article>
+
+		<article id="">
+			<div class="right-column">
+				<img class="town-article" src="images/misty-weather-opt.jpg" alt="City News">
+			</div>
+			<div class="left-column">
+				<h3>Greenville City</h3>
+				<div>
+				</div>
+				<p>
+					<script>
+						var main = document.querySelector('main');
+						var article = document.createElement('article');
+						article.className = "articleweather";
+
+						var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+						var request = new XMLHttpRequest();
+						request.open('GET', requestURL);
+						request.responseType = 'json';
+						request.send();
+
+						request.onload = function() {
+							var towns = request.response;
+							showTowns(towns);
+						}
+
+						function showTowns(jsonObj) {
+							var townsArray = jsonObj['towns'];
+
+							for (var i = 0; i < townsArray.length; i++) {
+
+								if (townsArray[i].name == "Greenville") {
+									var mydiv = document.createElement("div");
+									var myh1 = document.createElement("h1");
+									var myp1 = document.createElement("p");
+									var myp2 = document.createElement("p");
+									var myp3 = document.createElement("p");
+									var myp4 = document.createElement("p");
+									var myp5 = document.createElement("p");
+									var myList = document.createElement('ul');
+
+									myh1.textContent = townsArray[i].name + " " + "City";
+									myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+									myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+									myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+									myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
+									myp5.textContent = "Events";
+
+
+									var eventsWeather = townsArray[i].events;
+									for (var j = 0; j < eventsWeather.length; j++) {
+										var listItem = document.createElement('li');
+										listItem.textContent = eventsWeather[j];
+										myList.appendChild(listItem);
+									}
+
+									mydiv.appendChild(myh1);
+									mydiv.appendChild(myp1);
+									mydiv.appendChild(myp2);
+									mydiv.appendChild(myp3);
+									mydiv.appendChild(myp4);
+									mydiv.appendChild(myp5);
+									mydiv.appendChild(myList);
+									article.appendChild(mydiv);
+								}
+							}
+							main.appendChild(article);
+						}
+					</script>
+
+				</p>
+			</div>
+		</article>
+
+
+		<article id="">
+			<div class="right-column">
+				<img class="town-article" src="images/rainbow-opt.jpg" alt="City News">
+			</div>
+			<div class="left-column">
+				<h3>Springfield City</h3>
+				<div>
+				</div>
+				<p>
+					<script src="scripts/currentdate.js"></script>
+					<script src="scripts/hamburger.js"></script>
+					<script>
+						var main = document.querySelector('main');
+						var article = document.createElement('article');
+						article.className = "articleweather";
+
+						var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+						var request = new XMLHttpRequest();
+						request.open('GET', requestURL);
+						request.responseType = 'json';
+						request.send();
+
+						request.onload = function() {
+							var towns = request.response;
+							showTowns(towns);
+						}
+
+						function showTowns(jsonObj) {
+							var townsArray = jsonObj['towns'];
+
+							for (var i = 0; i < townsArray.length; i++) {
+
+								if (townsArray[i].name == "Springfield") {
+									var mydiv = document.createElement("div");
+									var myh1 = document.createElement("h1");
+									var myp1 = document.createElement("p");
+									var myp2 = document.createElement("p");
+									var myp3 = document.createElement("p");
+									var myp4 = document.createElement("p");
+									var myp5 = document.createElement("p");
+									var myList = document.createElement('ul');
+
+									myh1.textContent = townsArray[i].name + " " + "City";
+									myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+									myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+									myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+									myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
+									myp5.textContent = "Events";
+
+
+									var eventsWeather = townsArray[i].events;
+									for (var j = 0; j < eventsWeather.length; j++) {
+										var listItem = document.createElement('li');
+										listItem.textContent = eventsWeather[j];
+										myList.appendChild(listItem);
+									}
+
+									mydiv.appendChild(myh1);
+									mydiv.appendChild(myp1);
+									mydiv.appendChild(myp2);
+									mydiv.appendChild(myp3);
+									mydiv.appendChild(myp4);
+									mydiv.appendChild(myp5);
+									mydiv.appendChild(myList);
+									article.appendChild(mydiv);
+								}
+							}
+							main.appendChild(article);
+						}
+					</script>
+
+				</p>
+			</div>
+		</article>
 	</main>
 
 	<footer>
