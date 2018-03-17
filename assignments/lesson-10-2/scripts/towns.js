@@ -17,7 +17,6 @@ function showTowns(jsonObj) {
 	var townsArray = jsonObj['towns'];
 
 	for (var i = 0; i < townsArray.length; i++) {
-
 		if (townsArray[i].name != "Placerton") {
 			var mydiv = document.createElement("div");
 			mydiv.className = "divBox";
@@ -37,11 +36,9 @@ function showTowns(jsonObj) {
 
 			if (townsArray[i].name == "Springfield") {
 				myImg.setAttribute("src", "images/rainbow-opt.jpg");
-			}
-			else if (townsArray [i].name == "Greenville"){
+			} else if (townsArray[i].name == "Greenville") {
 				myImg.setAttribute("src", "images/misty-weather-opt.jpg");
-			}
-			else if  (townsArray [i].name == "Franklin"){
+			} else if (townsArray[i].name == "Franklin") {
 				myImg.setAttribute("src", "images/snow-park-opt.jpg");
 			}
 

@@ -1,7 +1,7 @@
 
 var SweatherObject = new XMLHttpRequest();
 
-SweatherObject.open('GET', 'https://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/OR/Springville.json', true);
+SweatherObject.open('GET', 'https://api.wunderground.com/api/67d090e8fbb75d1e/conditions/q/OR/Springfield.json', true);
 
 SweatherObject.send();
 
@@ -14,7 +14,7 @@ SweatherObject.onload = function () {
 	document.getElementById('Sw_icon').src = weatherInfo.current_observation.icon_url;
 	document.getElementById('SfeelsLike').innerHTML = weatherInfo.current_observation.feelslike_f;
 	document.getElementById('Sprecipitation').innerHTML = weatherInfo.current_observation.precip_today_in;
-	document.getElementById('Ss').innerHTML = weatherInfo.current_observation.wind_mph;
+	document.getElementById('Sx').innerHTML = weatherInfo.current_observation.wind_mph;
 	document.getElementById('Swindchill').innerHTML = weatherInfo.current_observation.windchill_string;
 	/*document.getElementById('currentObservation').innerHTML = weatherInfo.current_observation.ob_url;*/
 }

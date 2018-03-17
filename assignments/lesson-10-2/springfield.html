@@ -1,8 +1,7 @@
-
 <!doctype html>
 <html lang="en-us">
 
-	<head>
+<head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta charset="utf-8">
 
@@ -69,77 +68,65 @@
 			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 			<link href="table.css" rel="stylesheet">
 -->
+			<table id="shadow">
+				<thead>
+					<tr>
+						<th id="tableTitle" colspan="3"><strong>Springfield Weather Data</strong></th>
+					</tr>
+					<tr id="bold">
+						<th>Period</th>
+						<th>Sales</th>
 
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Summary</td>
+						<td>Sunny</td>
 
-			<body>
-				<br>
-				<main>
-					<table id="shadow">
-						<thead>
-							<tr>
-								<th id="tableTitle" colspan="3"><strong>Springfield Weather Data</strong></th>
-							</tr>
-							<tr id="bold">
-								<th>Period</th>
-								<th>Sales</th>
-								<th>Sales Goal</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>August</td>
-								<td>$3,590</td>
-								<td>$4,000</td>
-							</tr>
-							<tr>
+					</tr>
+					<tr>
 
-								<td>September</td>
-								<td>$4,420</td>
-								<td>$5,000</td>
-							</tr>
-							<tr>
+						<td>High</td>
+						<td>72 &deg;F</td>
 
-								<td>October</td>
-								<td>$4,870</td>
-								<td>$5,000</td>
-							</tr>
-							<tr>
+					</tr>
+					<tr>
 
-								<td>November</td>
-								<td>$8,610</td>
-								<td id="special">$7,500</td>
-							</tr>
-							<tr>
-								<td class="italic">Black Friday</td>
-								<td colspan="2">$3,200</td>
-							</tr>
-							<tr>
-								<td>Decemeber</td>
-								<td>$6,820</td>
-								<td>$7,500</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th colspan="3">Compiled 12.20.2020 by bRauls</th>
-							</tr>
-						</tfoot>
-					</table></section>
+						<td>Low</td>
+						<td>45 &deg;F</td>
 
-				<section class="currentweatherstats">
-					<h3>Weather Summary for <span id="place"> City, State</span></h3>
-					<p>Current Temperature is: <span id="currentTemperature"></span>&deg; F</p>
-					<p>Weather String: <span id="weatherstring"></span></p>
-					<img id="w_icon" src="" alt="current weather">
-					<p>Feels Like: <span id="feelsLike"> </span>&deg; F</p>
-					<p>Precipitation: <span id="precipitation"> <strong>&#37;</strong></span></p>
-					<p>Wind Speed: <span id="s"><strong> </strong></span> mph</p>
-					<p>Wind Chill: <span id="windchill"><strong> &#176; </strong></span></p>
-					<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
-					<br>
+					</tr>
+					<tr>
 
-				</section>
-				<section>
+						<td>Chance Precipitation</td>
+						<td>30 &#37;</td>
+
+					</tr>
+					<tr>
+						<td>Max Wind</td>
+						<td colspan="2">15 </td>
+					</tr>
+
+				</tbody>
+
+			</table>
+		</section>
+
+		<section class="currentweatherstats">
+			<h3>Weather Summary for <span id="Splace"> City, State</span></h3>
+			<p>Current Temperature is: <span id="ScurrentTemperature"></span>&deg; F</p>
+			<p>Weather String: <span id="Sweatherstring"></span></p>
+			<img id="Sw_icon" src="" alt="Scurrent weather">
+			<p>Feels Like: <span id="SfeelsLike"> </span>&deg; F</p>
+			<p>Precipitation: <span id="Sprecipitation"> <strong>&#37;</strong></span></p>
+			<p>Wind Speed: <span id="Sx"><strong> </strong></span> mph</p>
+			<p>Wind Chill: <span id="Swindchill"><strong> &#176; </strong></span></p>
+			<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
+			<br>
+
+		</section>
+		<section>
 			<article>
 				<div class="left-column">
 					<img class="town-article" src="images/rainbow-opt.jpg" alt="City News">
@@ -168,6 +155,8 @@
 	</footer>
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/wu-springville.js"></script>
+
 	<script>
 		var main = document.querySelector('main');
 		var article = document.createElement('article');
@@ -226,8 +215,6 @@
 			}
 			main.appendChild(article);
 		}
-
-
 
 	</script>
 
