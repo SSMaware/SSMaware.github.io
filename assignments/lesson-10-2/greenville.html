@@ -71,7 +71,7 @@
 		<table id="shadow">
 			<thead>
 				<tr>
-					<th id="tableTitle" colspan="3"><strong>Greenville Weather Data</strong></th>
+					<th id="tableTitle" colspan="2"><strong>Greenville Weather Data</strong></th>
 				</tr>
 				<tr id="bold">
 					<th>Period</th>
@@ -134,16 +134,14 @@
 
 		</section>
 		<section>
-			<article>
-				<div class="right-column">
-					<img class="town-article" src="images/misty-weather-opt.jpg" alt="City News">
-				</div>
-				<div class="left-column">
-					<h4>Greenville City</h4>
-					<p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
-					</p>
-				</div>
-			</article>
+			<figure class="skybanner">
+				<picture>
+					<source media="(min-width: 64rem)" srcset="images/misty-weather-opt.jpg">
+					<source media="(min-width: 37.5em)" srcset="images/misty-weather-opt.jpg">
+					<img src="images/misty-weather-opt.jpg" alt="banner">
+				</picture>
+			</figure>
+
 
 		</section>
 
@@ -162,7 +160,8 @@
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/wu-greenville.js"></script>
-	<script>
+	<article class=designs>
+	<script class=design>
 		var main = document.querySelector('main');
 		var article = document.createElement('article');
 		article.className = "articleweather";
@@ -221,6 +220,7 @@
 			main.appendChild(article);
 		}
 	</script>
+	</article>
 
 </body>
 </html>

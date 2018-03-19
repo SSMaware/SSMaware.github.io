@@ -82,11 +82,11 @@
 -->
 
 			<br>
-			<main>
+
 				<table id="shadow">
 					<thead>
 						<tr>
-							<th id="tableTitle" colspan="3"><strong>Franklin Weather Data</strong></th>
+							<th id="tableTitle" colspan="2"><strong>Franklin Weather Data</strong></th>
 						</tr>
 						<!--<tr id="bold">
 							<th>Period</th>
@@ -169,81 +169,89 @@
 
 				<section>
 
+					<figure class="skybanner">
+						<picture>
+							<source media="(min-width: 64rem)" srcset="images/snow-park-opt.jpg">
+							<source media="(min-width: 37.5em)" srcset="images/snow-park-opt.jpg">
+							<img class="town-article" src="images/snow-park-opt.jpg" alt="Snow Park">
+						</picture>
+					</figure>
 
-					<h3>Franklin in the News </h3>
-					<br>
 					<br>
 					<article>
-						<div class="left-column">
+						<!--<div class="left-column">
 							<img class="town-article" src="images/snow-park-opt.jpg" alt="City News">
 						</div>
 						<div class="right-column">
-							<h4>Franklin City</h4>
-							<p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
-							</p>
-						</div>
-					</article>
-				</section>
-				<script>
-					var main = document.querySelector('main');
-					var article = document.createElement('article');
-					article.className = "articleweather";
+<h4>Franklin City</h4>-->
+						<article class=designs>
+							<p><script class=design>
+								var main = document.querySelector('main');
+								var article = document.createElement('article');
+								article.className = "articleweather";
 
-					var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-					var request = new XMLHttpRequest();
-					request.open('GET', requestURL);
-					request.responseType = 'json';
-					request.send();
+								var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+								var request = new XMLHttpRequest();
+								request.open('GET', requestURL);
+								request.responseType = 'json';
+								request.send();
 
-					request.onload = function() {
-						var towns = request.response;
-						showTowns(towns);
-					}
-
-					function showTowns(jsonObj) {
-						var townsArray = jsonObj['towns'];
-
-						for (var i = 0; i < townsArray.length; i++) {
-
-							if (townsArray[i].name == "Franklin") {
-								var mydiv = document.createElement("div");
-								var myh1 = document.createElement("h1");
-								var myp1 = document.createElement("p");
-								var myp2 = document.createElement("p");
-								var myp3 = document.createElement("p");
-								var myp4 = document.createElement("p");
-								var myp5 = document.createElement("p");
-								var myList = document.createElement('ul');
-
-								myh1.textContent = townsArray[i].name + " " + "City";
-								myp1.textContent = "Motto: " + " " + townsArray[i].motto;
-								myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
-								myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
-								myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
-								myp5.textContent = "Events";
-
-
-								var eventsWeather = townsArray[i].events;
-								for (var j = 0; j < eventsWeather.length; j++) {
-									var listItem = document.createElement('li');
-									listItem.textContent = eventsWeather[j];
-									myList.appendChild(listItem);
+								request.onload = function() {
+									var towns = request.response;
+									showTowns(towns);
 								}
 
-								mydiv.appendChild(myh1);
-								mydiv.appendChild(myp1);
-								mydiv.appendChild(myp2);
-								mydiv.appendChild(myp3);
-								mydiv.appendChild(myp4);
-								mydiv.appendChild(myp5);
-								mydiv.appendChild(myList);
-								article.appendChild(mydiv);
+								function showTowns(jsonObj) {
+									var townsArray = jsonObj['towns'];
 
-							}
-						}
-						main.appendChild(article);
-					}
-				</script>
+									for (var i = 0; i < townsArray.length; i++) {
+
+										if (townsArray[i].name == "Franklin") {
+											var mydiv = document.createElement("div");
+											var myh1 = document.createElement("h1");
+											var myp1 = document.createElement("p");
+											var myp2 = document.createElement("p");
+											var myp3 = document.createElement("p");
+											var myp4 = document.createElement("p");
+											var myp5 = document.createElement("p");
+											var myList = document.createElement('ul');
+
+											myh1.textContent = townsArray[i].name + " " + "City";
+											myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+											myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+											myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+											myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
+											myp5.textContent = "Events";
+
+
+											var eventsWeather = townsArray[i].events;
+											for (var j = 0; j < eventsWeather.length; j++) {
+												var listItem = document.createElement('li');
+												listItem.textContent = eventsWeather[j];
+												myList.appendChild(listItem);
+											}
+
+											mydiv.appendChild(myh1);
+											mydiv.appendChild(myp1);
+											mydiv.appendChild(myp2);
+											mydiv.appendChild(myp3);
+											mydiv.appendChild(myp4);
+											mydiv.appendChild(myp5);
+											mydiv.appendChild(myList);
+											article.appendChild(mydiv);
+
+										}
+									}
+									main.appendChild(article);
+								}
+								</script></p>
+							<p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
+							</p>
+						<!--</div>-->
+					</article>
+					</article>
+				</section>
+
 
 
 			</main>
