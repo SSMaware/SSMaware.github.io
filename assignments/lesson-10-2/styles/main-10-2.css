@@ -4,10 +4,6 @@
 	box-sizing: border-box;
 }
 
-/* * {margin:0}*/
-
-/* This wildcard applies to all elements ensuring a box layout model */
-
 #forecast {
 	display: none;
 }
@@ -277,15 +273,6 @@ html {
 	font-family: Ubuntu, sans-serif;
 }
 
-#shadow {
-	box-shadow: 5px 5px 10px #628ca6;
-}
-
-#special {
-	background-color: #628ca6;
-	color: white;
-	font-weight: 500;
-}
 
 #bold {
 	font-weight: bolder;
@@ -297,7 +284,7 @@ html {
 	padding: 10px;
 	margin-right: 3px;
 	text-align: center;
-	background-color: lightblue;
+	background-color: #707070;
 	margin-bottom: 10px;
 	margin-left: 3px;
 	width: 35%;
@@ -317,11 +304,8 @@ html {
 
 
 
-
-
-
 table {
-	border: 2px color:#454545;
+	border: 3px color:#454545;
 	letter-spacing: 1px;
 	font-size: 0.8rem;
 	width: 50%;
@@ -338,15 +322,12 @@ table {
 td,
 th {
 	text-align: center;
-	border: 2px color:#454545;
+	border: 3px color:#000000;
 	padding: 10px 20px;
 	font-size: 15px;
 	color: black;
 }
 
-th {
-	background-color: #FFFFFF;
-}
 
 tr:nth-child(odd) td {
 	background-color: #FFFFFF;
@@ -370,22 +351,32 @@ tfoot {
 	color: darkslategray;
 }
 
-#shadow {
-	box-shadow: 5px 5px 10px #454545;
-}
-
 #special {
-	background-color: #628ca6;
+	background-color: #454545;
 	color: white;
 	font-weight: 500;
 }
 
 
 #tableTitle {
+	background-color: #FDD331;
 	font-size: 30px;
+}
+#tableTitleSmaller {
+	background-color: #FDD331;
+	font-size: 20px;
+	color: #000000;
 }
 
 #bold {
 	font-weight: bolder;
 	font-size: 16px;
+}
+
+#shadow {
+	box-shadow: 5px 5px 10px #454545;
+}
+
+#days{
+	background-color: #FFFFFF;
 }
