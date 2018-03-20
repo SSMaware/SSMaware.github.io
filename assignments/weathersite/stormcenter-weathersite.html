@@ -82,9 +82,9 @@
 				<br><br>
 				<label><span>E-mail:</span><input class="square" name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
 				<br><br>
-				<label><span>Phone Number:</span><input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9] {10,20}" required></label>
+				<label><span>Phone Number:</span><input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
 				<br><br>
-				<label><span>Zip Code:</span><input class="square" type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -] {6,10}" required></label>
+				<label><span>Zip Code:</span><input class="square" type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -]{5,10}" required></label>
 				<br><br>
 			</fieldset>
 			<br><br>
@@ -110,7 +110,7 @@
 					</datalist>
 				<br><br>
 				<label for="rating"><span>Storm Severity: 1 </span></label>
-				<input class="square" type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required>
+				<input class="square" type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 				<span id="ratingvalue">10</span><br>
 				<!-- output-->
 				<br><br>
