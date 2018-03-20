@@ -38,6 +38,7 @@
 			<p class="subheading">Weather Information at your Fingertips!</p>
 		</div>
 	</header>
+
 	<!-- site navigation use placeholder references -->
 	<nav>
 		<button class="hamburger" onclick="toggleHam()">&#9776;</button>
@@ -51,10 +52,9 @@
 				<li><a href="gallery-weathersite.html">Gallery</a></li>
 			</ul>
 		</div>
-
 	</nav>
 	<main>
-
+		<br>
 		<figure class="skybanner">
 			<picture>
 				<source media="(min-width: 64rem)" srcset="images/sky-opt-lrg.jpg">
@@ -63,9 +63,20 @@
 			</picture>
 		</figure>
 		<br>
-		<br>
-		<br>
+
 		<section>
+			<section class="currentweatherstats">
+				<h3>Weather Summary for <span id="Splace"> City, State</span></h3>
+				<p>Current Temperature is: <span id="ScurrentTemperature"></span>&deg; F</p>
+				<p>Weather String: <span id="Sweatherstring"></span></p>
+				<img id="Sw_icon" src="" alt="Scurrent weather">
+				<p>Feels Like: <span id="SfeelsLike"> </span>&deg; F</p>
+				<p>Precipitation: <span id="Sprecipitation"> <strong>&#37;</strong></span></p>
+				<p>Wind Speed: <span id="Sx"><strong> </strong></span> mph</p>
+				<p>Wind Chill: <span id="Swindchill"><strong> &#176; </strong></span></p>
+				<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
+				<br>
+			</section>
 
 			<!--
 			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -73,6 +84,7 @@
 -->
 			<table id="shadow">
 				<thead>
+
 					<tr>
 						<th id="tableTitle" colspan="10"><strong>Springfield Weather Data</strong></th>
 					</tr>
@@ -106,10 +118,6 @@
 						<td colspan="5">15 </td>
 					</tr>
 					<tr>
-						<td colspan="5">Wind Chill</td>
-						<td colspan="5"> </td>
-					</tr>
-					<tr>
 						<th id="tableTitleSmaller" colspan="10">10 Day Forecast</th>
 					</tr>
 					<tr id="days">
@@ -140,20 +148,10 @@
 			</table>
 		</section>
 
+		<br>
+		<br>
+		<br>
 
-		<section class="currentweatherstats">
-			<h3>Weather Summary for <span id="Splace"> City, State</span></h3>
-			<p>Current Temperature is: <span id="ScurrentTemperature"></span>&deg; F</p>
-			<p>Weather String: <span id="Sweatherstring"></span></p>
-			<img id="Sw_icon" src="" alt="Scurrent weather">
-			<p>Feels Like: <span id="SfeelsLike"> </span>&deg; F</p>
-			<p>Precipitation: <span id="Sprecipitation"> <strong>&#37;</strong></span></p>
-			<p>Wind Speed: <span id="Sx"><strong> </strong></span> mph</p>
-			<p>Wind Chill: <span id="Swindchill"><strong> &#176; </strong></span></p>
-			<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
-			<br>
-
-		</section>
 		<section>
 			<figure class="skybanner">
 				<picture>
@@ -162,7 +160,7 @@
 					<img src="images/rainbow-opt.jpg" alt="banner">
 				</picture>
 			</figure>
-
+			<h2>Springville Information</h2>
 		</section>
 		<br>
 		<br>
@@ -182,8 +180,8 @@
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/wu-springville.js"></script>
-	<article class=designs>
-		<script class=design>
+
+		<script class=designs>
 			var main = document.querySelector('main');
 			var article = document.createElement('article');
 			article.className = "articleweather";
@@ -242,7 +240,7 @@
 				main.appendChild(article);
 			}
 		</script>
-	</article>
+
 
 </body>
 

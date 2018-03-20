@@ -4,6 +4,14 @@
 		width: 90%;
 		margin: 0 auto;
 	}
+
+
+	.flex-container {
+		display: flex;
+		flex-wrap: nowrap;
+		background-color: #454545;
+	}
+
 	.left-column, .right-column{
 		width: 50%;
 		padding: 15px;

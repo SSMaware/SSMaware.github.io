@@ -63,6 +63,18 @@
 		</figure>
 		<br>
 		<section>
+			<section class="currentweatherstats">
+				<h3>Weather Summary for <span id="Gplace"> City, State</span></h3>
+				<p>Current Temperature is: <span id="GcurrentTemperature"></span>&deg; F</p>
+				<p>Weather String: <span id="Gweatherstring"></span></p>
+				<img id="Gw_icon" src="" alt="current weather">
+				<p>Feels Like: <span id="GfeelsLike"> </span>&deg; F</p>
+				<p>Precipitation: <span id="Gprecipitation"> <strong>&#37;</strong></span></p>
+				<p>Wind Speed: <span id="Gs"><strong> </strong></span> mph</p>
+				<p>Wind Chill: <span id="Gwindchill"><strong> &#176; </strong></span></p>
+				<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
+				<br>
+			</section>
 
 			<!--
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -102,10 +114,7 @@
 						<td colspan="5">Max Wind</td>
 						<td colspan="5">10 mph SW </td>
 					</tr>
-					<tr>
-						<td colspan="5">Wind Chill</td>
-						<td colspan="5"> </td>
-					</tr>
+
 					<tr>
 						<th id="tableTitleSmaller" colspan="10">10 Day Forecast</th>
 					</tr>
@@ -139,18 +148,7 @@
 			<br>
 		</section>
 
-		<section class="currentweatherstats">
-			<h3>Weather Summary for <span id="Gplace"> City, State</span></h3>
-			<p>Current Temperature is: <span id="GcurrentTemperature"></span>&deg; F</p>
-			<p>Weather String: <span id="Gweatherstring"></span></p>
-			<img id="Gw_icon" src="" alt="current weather">
-			<p>Feels Like: <span id="GfeelsLike"> </span>&deg; F</p>
-			<p>Precipitation: <span id="Gprecipitation"> <strong>&#37;</strong></span></p>
-			<p>Wind Speed: <span id="Gs"><strong> </strong></span> mph</p>
-			<p>Wind Chill: <span id="Gwindchill"><strong> &#176; </strong></span></p>
-			<!--<p>Current Observation: <span id="currentObservation"></span></p>-->
-			<br>
-		</section>
+
 		<section>
 			<figure class="skybanner">
 				<picture>
@@ -160,6 +158,7 @@
 				</picture>
 			</figure>
 		</section>
+		<h2>Greenville Information</h2>
 	</main>
 	<footer>
 		<aside>
@@ -175,8 +174,7 @@
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/wu-greenville.js"></script>
-	<article class=designs>
-		<script class=design>
+		<script class=designs>
 			var main = document.querySelector('main');
 			var article = document.createElement('article');
 			article.className = "articleweather";
@@ -235,6 +233,6 @@
 				main.appendChild(article);
 			}
 		</script>
-	</article>
+
 </body>
 </html>
