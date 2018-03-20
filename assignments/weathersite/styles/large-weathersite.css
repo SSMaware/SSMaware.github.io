@@ -1,6 +1,6 @@
 @media only screen and (min-width: 64rem) {
 
-	body{
+	body {
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -12,7 +12,8 @@
 		background-color: #454545;
 	}
 
-	.left-column, .right-column{
+	.left-column,
+	.right-column {
 		width: 50%;
 		padding: 15px;
 	}
@@ -34,7 +35,7 @@
 		margin-bottom: 40px;
 		border: 1px solid black;
 		padding: 10px;
-		text-align:center;
+		text-align: center;
 		background-color: #454545;
 	}
 	.mainpage-item p {
@@ -54,7 +55,6 @@
 	/*section {
 		text-align: center;
 	}*/
-
 	/* #four {
 		display:flex;
 	}
@@ -67,7 +67,9 @@
 		display: flex;
 
 	} */
-	.fn, gv, sf {
+	.fn,
+	gv,
+	sf {
 		image-orientation: center;
 	}
 
@@ -78,7 +80,6 @@
 		width:auto;
 		padding: 5px;
 	} */
-
 	.gallery-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -92,7 +93,7 @@
 		margin-bottom: 40px;
 		border: 1px solid black;
 		padding: 10px;
-		text-align:center;
+		text-align: center;
 		background-color: #454545;
 	}
 
@@ -111,17 +112,17 @@
 	.gallery-item:hover h2 {
 		box-shadow: 5px 5px 10px #FAFAFA;
 	}
-	}
-#length{
-	width:600px;
-}
-}	/* 64em is also 1028px when basefont is 16px */
-	/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-   /* nav button {
+	#length {
+		width: 600px;
+	}
+}
+
+
+/* 64em is also 1028px when basefont is 16px */
+
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+/* nav button {
 		display:none;
 	}*/
-
-
-
-

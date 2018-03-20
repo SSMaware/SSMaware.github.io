@@ -169,9 +169,8 @@ section{
 	.articleweather {
 		display: flex;
 		justify-content: space-around;
-		flex-direction: column;
+		flex-direction: row;
 	}
-
 	.active{
 		color: chartreuse;
 		border: 2px solid chartreuse;
