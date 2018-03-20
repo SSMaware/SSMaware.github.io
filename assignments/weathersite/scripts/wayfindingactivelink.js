@@ -1,5 +1,4 @@
-
-	var urlString, urlArray, pageHREF, menu, i, currentURL;
+var urlString, urlArray, pageHREF, menu, i, currentURL;
 urlString = document.location.href;
 urlArray = urlString.split('/');
 pageHREF = urlArray[urlArray.length - 1];

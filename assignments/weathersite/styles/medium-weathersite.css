@@ -15,7 +15,7 @@
 	.navigation {
 		display: flex;
 		justify-content: space-around;
-		flex-direction: crow;
+		flex-direction: row;
 		background-color: #707070;
 		overflow: hidden;
 		text-align: center;
@@ -171,4 +171,10 @@ section{
 		justify-content: space-around;
 		flex-direction: column;
 	}
+
+	.active{
+		color: chartreuse;
+		border: 2px solid chartreuse;
+	}
+
 }

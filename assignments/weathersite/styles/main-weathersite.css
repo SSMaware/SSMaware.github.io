@@ -94,39 +94,32 @@ header img.logo {
 	display: none;
 }
 
-@media only screen and (max-width: 37.5em) {
-	.navigation.responsive {
-		position: relative;
-	}
-
-	.navigation.responsive li {
-		background-color: #707070;
-		display: block;
-		width: 100%;
-		margin: 2px 0;
-		border: 1px solid #ddd;
-	}
-
-	.navigation.responsive li a {
-		padding: 1rem;
-		text-align: center;
-		display: block;
-		text-decoration: none;
-		font-size: 1rem;
-		color: #eee;
-		font-weight: 800;
-	}
-
-
-	.navigation.responsive li a:hover {
-		color: #FDD331;
-	}
+.navigation.responsive {
+	position: relative;
 }
 
-/*
+.navigation.responsive li {
+	background-color: #707070;
+	display: block;
+	width: 100%;
+	margin: 2px 0;
+	border: 1px solid #ddd;
+}
 
-nav ul li a:hover:not(.active) {
-	color:#FDD331;}*/
+.navigation.responsive li a {
+	padding: 1rem;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-size: 1rem;
+	color: #eee;
+	font-weight: 800;
+}
+
+
+.navigation.responsive li a:hover {
+	color: #FDD331;
+}
 
 .bord {
 	border 4px;
@@ -169,9 +162,12 @@ nav ul li a:hover:not(.active) {
 }
 */
 
-.fn, gv, sf {
+.fn,
+gv,
+sf {
 	image-orientation: center;
 }
+
 .gallery-item {
 	color: #fff;
 	margin-bottom: 40px;
@@ -362,6 +358,7 @@ tfoot {
 	background-color: #FDD331;
 	font-size: 30px;
 }
+
 #tableTitleSmaller {
 	background-color: #FDD331;
 	font-size: 20px;
@@ -377,6 +374,7 @@ tfoot {
 	box-shadow: 5px 5px 10px #454545;
 }
 
-#days{
+#days {
 	background-color: #FFFFFF;
 }
+
