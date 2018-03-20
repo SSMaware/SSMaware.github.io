@@ -172,8 +172,8 @@ section{
 		flex-direction: row;
 	}
 	.active{
-		color: chartreuse;
-		border: 2px solid chartreuse;
+		color: #1F2D45;
+		border: 2px color: #1F2D45;
 	}
 
 }
