@@ -142,11 +142,14 @@ section{
 		display: inline-flex;
 
 	}*/
-	.fn,
+
+
+
+	/*.fn,
 	gv,
 	sf {
 		image-orientation: center;
-	}
+	}*/
 
 	.home-item p {
 		background-color: #707070;
