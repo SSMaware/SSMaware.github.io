@@ -1,0 +1,118 @@
+<!doctype html>
+
+<!--Home-->
+
+<html lang="en-us">
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Weather Facts</title>
+	<meta name="author" content="Sandra S. Marler">
+
+	<meta name="description" content="Weather Facts Page">
+	<!-- external style references in the proper cascading order -->
+
+
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+
+	<link href="styles/main-weatherdata.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+
+		<link href="styles/medium-weatherdata.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+
+		<link href="styles/large-weatherdata.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="images/sunflowersungraphic-opt.png" alt="sitelogo">
+		<div id="siteTitle">
+			<h1><strong> Weather Facts</strong></h1>
+			<p class="subheading">Weather Information at your Fingertips!</p>
+		</div>
+	</header>
+	<!-- site navigation use placeholder references -->
+	<nav>
+		<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+		<div id="nav">
+			<ul class="navigation" id="mainmenu">
+				<li><a href="index-weatherdata.html">Home</a></li>
+				<li><a href="franklin-weatherdata.html">Franklin</a></li>
+				<li><a href="greenville-weatherdata.html">Greenville</a></li>
+				<li><a href="springfield-weatherdata.html">Springfield</a></li>
+				<li><a href="stormcenter-weatherdata.html">StormCenter</a></li>
+				<li><a href="gallery-weatherdata.html">Gallery</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<figure class="skybanner">
+			<picture>
+				<source media="(min-width: 64rem)" srcset="images/sky-opt-lrg.jpg">
+				<source media="(min-width: 37.5em)" srcset="images/sky-opt-med.jpg">
+				<img src="images/sky-opt-sm.jpg" alt="banner">
+			</picture>
+		</figure>
+		<br>
+		<br>
+		<!--<a class="superherosquad" href="/assignments/lesson-10-2/heroes.html">Super Hero Squad</a>-->
+		<br>
+		<h2>Local Communites</h2>
+		<article id="one">
+			<div class="right-column">
+				<img class="town-article" src="images/franklincity-medium.jpg" alt="City News">
+			</div>
+			<div class="left-column">
+				<h3 class="weatherStoryTime">Weather Story</h3>
+				<div>
+				</div>
+				<p class="weatherStoryTime"> Franklin, Greenville and Springfields Combined annual Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
+				</p>
+			</div>
+		</article>
+
+		<!--<section class=flex-container>
+			<h3></h3>
+		</section>-->
+
+
+	</main>
+	<footer>
+		<aside>
+			<div>Weather Facts</div>
+			<div>123 Main St.</div>
+			<div>Franklin, MU 83454</div>
+			<div>(999)999.9999</div>
+			<div>contact@theurl.com</div>
+			<p class="footer-bar"> <small> <a> &copy; *All Rights Reserved * 2020 * Weather Facts * Sandra S. Marler * <span id="current-date">Date</span></a><br>* https://www.wunderground.com/  API - Weather Underground *</small></p>
+			<img class=weatherundergroundicon src="images/wundergroundLogoopt.jpg" alt="WU Logo">
+		</aside>
+	</footer>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/towns.js"></script>
+	<script>
+		var urlString, urlArray, pageHREF, menu, i, currentURL;
+		urlString = document.location.href;
+		urlArray = urlString.split('/');
+		pageHREF = urlArray[urlArray.length - 1];
+
+		if (pageHREF !== "") {
+			menu = document.querySelectorAll('ul#mainmenu li a');
+			for (i = 0; i < menu.length; i++) {
+				currentURL = (menu[i].getAttribute('href'));
+				menu[i].parentNode.className = '';
+				if (currentURL === pageHREF) {
+					menu[i].parentNode.className = 'active';
+				}
+			}
+		}
+	</script>
+</body>
+</html>
