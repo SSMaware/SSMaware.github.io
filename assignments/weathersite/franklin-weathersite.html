@@ -55,8 +55,8 @@
 	</nav>
 	<main>
 
-		<figure class="skybanner">
-			<picture>
+		<figure>
+			<picture class="skybanner">
 				<source media="(min-width: 64rem)" srcset="images/sky-opt-lrg.jpg">
 				<source media="(min-width: 37.5em)" srcset="images/sky-opt-med.jpg">
 				<img src="images/sky-opt-sm.jpg" alt="banner">
@@ -125,122 +125,126 @@
 					<td colspan="5">Max Wind</td>
 					<td colspan="5">5 mph SW</td>
 				</tr>
-
-				<tr>
-					<th id="tableTitleSmaller" colspan="10">10 Day Forecast</th>
-				</tr>
-				<tr id="days">
-					<th>Day 1</th>
-					<th>Day 2</th>
-					<th>Day 3</th>
-					<th>Day 4</th>
-					<th>Day 5</th>
-					<th>Day 6</th>
-					<th>Day 7</th>
-					<th>Day 8</th>
-					<th>Day 9</th>
-					<th>Day 10</th>
-				</tr>
-				<tr>
-					<td>89 &deg;F</td>
-					<td>87 &deg;F</td>
-					<td>78 &deg;F</td>
-					<td>75 &deg;F</td>
-					<td>72 &deg;F</td>
-					<td>72 &deg;F</td>
-					<td>79 &deg;F</td>
-					<td>83 &deg;F</td>
-					<td>85 &deg;F</td>
-					<td>89 &deg;F</td>
-				</tr>
 			</tbody>
 		</table>
-		<br>
-		<br>
-		<br>
 
-			<figure class="skybanner">
-				<picture>
-					<source media="(min-width: 64rem)" srcset="images/snow-park-opt.jpg">
-					<source media="(min-width: 37.5em)" srcset="images/snow-park-opt.jpg">
-					<img class="town-article" src="images/snow-park-opt.jpg" alt="Snow Park">
-				</picture>
-			</figure>
-			<br>
-
-				<!--<div class="left-column">
+		<section id="forecast">
+			<table>
+				<thead>
+					<tr>
+						<th id="tableTitleSmaller" colspan="10">10 Day Forecast</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="dayLabel">
+						<td>Day 1</td>
+						<td>Day 2</td>
+						<td>Day 3</td>
+						<td>Day 4</td>
+						<td>Day 5</td>
+						<td>Day 6</td>
+						<td>Day 7</td>
+						<td>Day 8</td>
+						<td>Day 9</td>
+						<td>Day 10</td>
+					</tr>
+					<tr>
+						<td>89 &deg;F</td>
+						<td>87 &deg;F</td>
+						<td>78 &deg;F</td>
+						<td>75 &deg;F</td>
+						<td>72 &deg;F</td>
+						<td>72 &deg;F</td>
+						<td>79 &deg;F</td>
+						<td>83 &deg;F</td>
+						<td>85 &deg;F</td>
+						<td>89 &deg;F</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<br>
+		<figure>
+			<picture>
+				<source media="(min-width: 64rem)" srcset="images/snow-park-opt.jpg">
+				<source media="(min-width: 37.5em)" srcset="images/snow-park-opt.jpg">
+				<img class="town-article" src="images/snow-park-opt.jpg" alt="Snow Park">
+			</picture>
+		</figure>
+		<br>
+		<!--<div class="left-column">
 							<img class="town-article" src="images/snow-park-opt.jpg" alt="City News">
 						</div>
 						<div class="right-column">
 <h4>Franklin City</h4>-->
-				<section>
-					<h2>Franklin Information</h2>
-					<p>
-						<script class=designs>
-							var main = document.querySelector('main');
-							var article = document.createElement('article');
-							article.className = "articleweather";
+		<section>
+			<h2>Franklin Information</h2>
+			<p>
+				<script class=designs>
+					var main = document.querySelector('main');
+					var article = document.createElement('article');
+					article.className = "articleweather";
 
-							var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-							var request = new XMLHttpRequest();
-							request.open('GET', requestURL);
-							request.responseType = 'json';
-							request.send();
+					var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+					var request = new XMLHttpRequest();
+					request.open('GET', requestURL);
+					request.responseType = 'json';
+					request.send();
 
-							request.onload = function() {
-								var towns = request.response;
-								showTowns(towns);
-							}
+					request.onload = function() {
+						var towns = request.response;
+						showTowns(towns);
+					}
 
-							function showTowns(jsonObj) {
-								var townsArray = jsonObj['towns'];
+					function showTowns(jsonObj) {
+						var townsArray = jsonObj['towns'];
 
-								for (var i = 0; i < townsArray.length; i++) {
+						for (var i = 0; i < townsArray.length; i++) {
 
-									if (townsArray[i].name == "Franklin") {
-										var mydiv = document.createElement("div");
-										var myh1 = document.createElement("h1");
-										var myp1 = document.createElement("p");
-										var myp2 = document.createElement("p");
-										var myp3 = document.createElement("p");
-										var myp4 = document.createElement("p");
-										var myp5 = document.createElement("p");
-										var myList = document.createElement('ul');
+							if (townsArray[i].name == "Franklin") {
+								var mydiv = document.createElement("div");
+								var myh1 = document.createElement("h1");
+								var myp1 = document.createElement("p");
+								var myp2 = document.createElement("p");
+								var myp3 = document.createElement("p");
+								var myp4 = document.createElement("p");
+								var myp5 = document.createElement("p");
+								var myList = document.createElement('ul');
 
-										myh1.textContent = townsArray[i].name + " " + "City";
-										myp1.textContent = "Motto: " + " " + townsArray[i].motto;
-										myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
-										myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
-										myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
-										myp5.textContent = "Events";
+								myh1.textContent = townsArray[i].name + " " + "City";
+								myp1.textContent = "Motto: " + " " + townsArray[i].motto;
+								myp2.textContent = "Year Founded:" + " " + townsArray[i].yearFounded;
+								myp3.textContent = "Current Population:" + " " + townsArray[i].currentPopulation;
+								myp4.textContent = "Average Rainfall:" + " " + townsArray[i].averageRainfall + " " + "inches";
+								myp5.textContent = "Events";
 
 
-										var eventsWeather = townsArray[i].events;
-										for (var j = 0; j < eventsWeather.length; j++) {
-											var listItem = document.createElement('li');
-											listItem.textContent = eventsWeather[j];
-											myList.appendChild(listItem);
-										}
-
-										mydiv.appendChild(myh1);
-										mydiv.appendChild(myp1);
-										mydiv.appendChild(myp2);
-										mydiv.appendChild(myp3);
-										mydiv.appendChild(myp4);
-										mydiv.appendChild(myp5);
-										mydiv.appendChild(myList);
-										article.appendChild(mydiv);
-
-									}
+								var eventsWeather = townsArray[i].events;
+								for (var j = 0; j < eventsWeather.length; j++) {
+									var listItem = document.createElement('li');
+									listItem.textContent = eventsWeather[j];
+									myList.appendChild(listItem);
 								}
-								main.appendChild(article);
+
+								mydiv.appendChild(myh1);
+								mydiv.appendChild(myp1);
+								mydiv.appendChild(myp2);
+								mydiv.appendChild(myp3);
+								mydiv.appendChild(myp4);
+								mydiv.appendChild(myp5);
+								mydiv.appendChild(myList);
+								article.appendChild(mydiv);
+
 							}
-						</script>
-					</p>
-					<p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
-					</p>
-					<!--</div>-->
-				</section>
+						}
+						main.appendChild(article);
+					}
+				</script>
+			</p>
+			<p> Franklin's yearly Family Festival was a wonderful event this year. The weather held out beautifully for the annual April event. The skys were a beautiful blue with occasional brilliant white clouds. Families of all shapes and sizes participated in the town's parade. Local musical talent performed various enjoyable arrangements. Colorful and fresh produce was shipped in from the south and displayed in rainbows atop the tables to provide a beautiful and healthy feast for all families.
+			</p>
+			<!--</div>-->
+		</section>
 
 	</main>
 	<br>

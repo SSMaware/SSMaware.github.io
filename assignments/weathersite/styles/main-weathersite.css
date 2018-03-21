@@ -3,7 +3,13 @@
 * {
 	box-sizing: border-box;
 }
-
+.designs {
+	text-align: center;
+}
+.weatherStoryTime{
+	padding 10px;
+	margin: 10px;
+}
 #forecast {
 	display: none;
 }
@@ -100,7 +106,8 @@ header img.logo {
 
 .navigation.responsive li {
 	background-color: #707070;
-	display: block;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	margin: 2px 0;
 	border: 1px solid #ddd;
@@ -109,7 +116,6 @@ header img.logo {
 .navigation.responsive li a {
 	padding: 1rem;
 	text-align: center;
-	display: block;
 	text-decoration: none;
 	font-size: 1rem;
 	color: #eee;
@@ -127,9 +133,9 @@ header img.logo {
 }
 
 .square {
-	background-color: #FDD331;
-	padding: 0px;
-
+	background-color: lightgray;
+	padding: 10px;
+	font-size: 25px;
 }
 
 .gallery-grid {
@@ -215,8 +221,10 @@ main figure {
 
 main figure img {
 	width: 100%;
-	border: 5px solid #707070;
+}
 
+.skybanner img{
+	border: 5px solid #707070;
 }
 
 section {
@@ -251,7 +259,7 @@ footer > p {}
 
 .articleweather {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -269,6 +277,9 @@ html {
 	font-family: Ubuntu, sans-serif;
 }
 
+/*#tableTitleSmaller{
+	display:none;
+}*/
 
 #bold {
 	font-weight: bolder;
@@ -283,7 +294,16 @@ html {
 	background-color: #707070;
 	margin-bottom: 10px;
 	margin-left: 3px;
-	width: 35%;
+}
+
+.divBox2 {
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 3px;
+	text-align: center;
+	background-color: #707070;
+	margin-bottom: 10px;
+	margin-left: 3px;
 }
 
 .design {
@@ -301,19 +321,12 @@ html {
 
 
 table {
-	border: 3px color:#454545;
+	border: 3px solid #454545;
 	letter-spacing: 1px;
 	font-size: 0.8rem;
-	width: 50%;
 	border-collapse: collapse;
-	background-color: #1F2D45;
-	width: inherit;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 5%;
+	margin: 5%;
 }
-
-
 
 td,
 th {
@@ -363,6 +376,9 @@ tfoot {
 	background-color: #FDD331;
 	font-size: 20px;
 	color: #000000;
+	/*box-shadow: 5px 5px 10px #454545;
+	text-align: center;
+	margin: 0 auto;*/
 }
 
 #bold {
@@ -372,9 +388,16 @@ tfoot {
 
 #shadow {
 	box-shadow: 5px 5px 10px #454545;
+	text-align: center;
+	margin: 0 auto;
 }
 
-#days {
-	background-color: #FFFFFF;
+.skybanner {
+	height: auto;
 }
 
+legend{
+	background-color: white;
+	font-size: 22px;
+	padding: 5px;
+}

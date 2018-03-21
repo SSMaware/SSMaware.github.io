@@ -54,8 +54,8 @@
 		</div>
 	</nav>
 	<main>
-		<figure class="skybanner">
-			<picture>
+		<figure>
+			<picture class="skybanner">
 				<source media="(min-width: 64rem)" srcset="images/sky-opt-lrg.jpg">
 				<source media="(min-width: 37.5em)" srcset="images/sky-opt-med.jpg">
 				<img src="images/sky-opt-sm.jpg" alt="banner">
@@ -83,7 +83,7 @@
 			<table id="shadow">
 				<thead>
 					<tr>
-						<th id="tableTitle" colspan="10"><strong>Greenville Weather Data</strong></th>
+						<th id="tableTitle" colspan="2"><strong>Greenville Weather Data</strong></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -114,21 +114,30 @@
 						<td colspan="5">Max Wind</td>
 						<td colspan="5">10 mph SW </td>
 					</tr>
-
+				</tbody>
+			</table>
+			<br>
+			<br>
+		</section>
+		<section id="forecast">
+			<table>
+				<thead>
 					<tr>
 						<th id="tableTitleSmaller" colspan="10">10 Day Forecast</th>
 					</tr>
-					<tr id="days">
-						<th>Day 1</th>
-						<th>Day 2</th>
-						<th>Day 3</th>
-						<th>Day 4</th>
-						<th>Day 5</th>
-						<th>Day 6</th>
-						<th>Day 7</th>
-						<th>Day 8</th>
-						<th>Day 9</th>
-						<th>Day 10</th>
+				</thead>
+				<tbody>
+					<tr id="dayLabel">
+						<td>Day 1</td>
+						<td>Day 2</td>
+						<td>Day 3</td>
+						<td>Day 4</td>
+						<td>Day 5</td>
+						<td>Day 6</td>
+						<td>Day 7</td>
+						<td>Day 8</td>
+						<td>Day 9</td>
+						<td>Day 10</td>
 					</tr>
 					<tr>
 						<td>84 &deg;F</td>
@@ -144,13 +153,11 @@
 					</tr>
 				</tbody>
 			</table>
-			<br>
-			<br>
 		</section>
 
 
 		<section>
-			<figure class="skybanner">
+			<figure>
 				<picture>
 					<source media="(min-width: 64rem)" srcset="images/misty-weather-opt.jpg">
 					<source media="(min-width: 37.5em)" srcset="images/misty-weather-opt.jpg">
