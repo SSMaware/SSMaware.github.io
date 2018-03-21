@@ -197,3 +197,13 @@ section{
 		background-color: #FFFFFF;
 	}
 }
+footer {
+	display: block;
+	background-color: #707070;
+	text-align: center;
+	width: 100%;
+	height: 315px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
