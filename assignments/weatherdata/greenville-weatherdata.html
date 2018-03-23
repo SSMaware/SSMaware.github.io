@@ -67,7 +67,7 @@
 				<h3>Weather Summary for <span id="Gplace"> City, State</span></h3>
 				<p>Current Temperature is: <span id="GcurrentTemperature"></span>&deg; F</p>
 				<p>Weather String: <span id="Gweatherstring"></span></p>
-				<img id="Gw_icon" src="" alt="current weather">
+				<img id="Gw_icon" src=".current_observation.icon_url" alt="current weather">
 				<p>Feels Like: <span id="GfeelsLike"> </span>&deg; F</p>
 				<p>Precipitation: <span id="Gprecipitation"> <strong>&#37;</strong></span></p>
 				<p>Wind Speed: <span id="Gs"><strong> </strong></span> mph</p>
@@ -200,10 +200,10 @@
 		}
 	</script>
 
-	<script class=designs>
+	<script>
 		var main = document.querySelector('main');
 		var article = document.createElement('article');
-		article.className = "articleweather";
+		article.className = "designs";
 
 		var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 		var request = new XMLHttpRequest();

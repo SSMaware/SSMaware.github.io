@@ -4,8 +4,14 @@
 	box-sizing: border-box;
 }
 .designs {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
+
+.designs ul{
+	list-style: none;
+}
+
 .weatherStoryTime{
 	padding: 10px;
 	margin: 10px;
@@ -100,17 +106,12 @@ header img.logo {
 	display: none;
 }
 
-.navigation.responsive {
-	position: relative;
-}
-
 .navigation.responsive li {
 	background-color: #707070;
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	margin: 2px 0;
-	border: 1px solid #ddd;
+	margin: 5px;
 }
 
 .navigation.responsive li a {
