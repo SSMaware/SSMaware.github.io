@@ -5,33 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
-	<!--<script>
-		$(function () {
-			// All jQuery code goes here
 
-			$('#alcoveLogo').css('opacity', 0.4);
-
-			$('.servicesBtn').css('color', '#FFF');
-		})
-	</script>-->
-	<!--<script>
-	window.onload = function(){
-	var element = document.getElementById('alcoveLoge');
-	element.style.opacity=0.2;
-	}
-	</script>-->
-
-	<script>
-		window.onload = function(){
-	var element = document.getElementsByClassName('servicesBtn');
-			for(var i = 0; i < elements.length; i ++){
-				id i % 2 == 0){
-					elements[i].style.color = 'rgb(0,106,255)';
-				}
-			}
-		}
-	</script>
 </head>
 
 <body>
@@ -150,6 +124,45 @@
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
 		</div>
 	</div>
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script>
+$(function () {
+// All jQuery code goes here
+
+$('#alcoveLogo').css('opacity', 0.4);
+
+$('.servicesBtn').css('color', '#FFF');
+})
+</script>
+	<script>
+		window.onload = function() {
+			var element = document.getElementById('alcoveLogo');
+			element.style.opacity = 0.2;
+		}
+	</script>
+	<script>
+		window.onload = function() {
+			var elements = document.getElementsByClassName('servicesBtn');
+			for (var i = 0; i < elements.length; i++) {
+				if (i % 2 == 0) {
+					elements[i].style.color = 'rgb(0,106,255)';
+				}
+			}
+		}
+
+	</script>
+	<script>
+		window.onload = function() {
+			var elements = document.getElementsByTagName('h2');
+			for(var i = 0; i < elements.length; i ++){
+				elements[i].style.borderColor = 'rgb(255,0,0)';
+				elements[i].style.borderWidth = '2px';
+				elements[i].style.borderStyle = 'solid';
+				elements[i].style.backgroundColor = 'rgba(255,0,0,0.2)';
+			}
+		}
+	</script>
+
 </body>
 
 </html>
