@@ -1,11 +1,11 @@
-/* Style.css | Created by Sachin Bhatnagar (mailme@sachinbhatnagar.com) for
+/* Style.css | Created by Sachin Bhatnagar (mailme@sachinbhatnagar.com) for 
 Introduction to jQuery (Learnable) | August 2014 */
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 * {
 	font-family:sans-serif;
-	margin:0px;
+	margin:0px;	
 }
 
 html,body {
@@ -230,13 +230,12 @@ body {
 	padding:7px;
 	background:rgba(0,0,255,0.2);
 	margin:4px;
-	list-style: none;
+	list-style: none;	
 }
 
 .box3 select {
 	position: absolute;
 	top: 194px;
-	left:0px;
 	padding: 20px;
 	width: 305px;
 	border: none;
