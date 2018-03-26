@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fruit Basket</title>
+	<link rel="stylesheet" href="css/fruitbasket.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function() {
+			// Array containing Objects with Fruit names & quantities
+			var fruitBasket = [{
+					title: 'Apples',
+					quantity: 20
+				},
+				{
+					title: 'Oranges',
+					quantity: 25
+				},
+				{
+					title: 'Kiwis',
+					quantity: 50
+				},
+				{
+					title: 'Strawberries',
+					quantity: 45
+				},
+				{
+					title: 'Bananas',
+					quantity: 10
+				},
+				{
+					title: 'Mangoes',
+					quantity: 5
+				},
+				{
+					title: 'Tomatoes',
+					quantity: 30
+				}
+			];
+
+		})
+	</script>
+	<script>
+		$(function() {
+					$('li:first').css('background-color', 'rgb(248, 95, 95)');
+					$('li:last').css('background-color', 'rgb(248, 95, 95)');
+		})
+	</script>
+	<script>
+		$(function() {
+			$('li:even').css('background-color', 'rgb(248, 95, 95)');
+			$('li:odd').css('background-color', 'rgb(#000000)');
+			$('li:eq(3)').css('background-color', 'rgb(248, 95, 95)');
+		})
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<ul class="fruits">
+
+
+		</ul>
+	</div>
+</body>
+</html>
