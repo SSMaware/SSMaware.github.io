@@ -23,7 +23,7 @@
 body {
 	font-size: 18px;
 	color: #000000;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat:200', sans-serif;
 }
 
 .superherosquad {
@@ -36,6 +36,7 @@ body {
 }
 
 header title {
+	font-family: 'Montserrat:700', sans-serif;
 	background-color: #FFFFFF;
 	width: auto;
 	height: 145px;
@@ -46,6 +47,7 @@ header title {
 
 
 h1 {
+	font-family: 'Montserrat:500', sans-serif;
 	font-size: 50px;
 	text-align: center;
 	margin-top: -5px;
@@ -53,6 +55,7 @@ h1 {
 }
 
 h2 {
+	font-family: 'Montserrat:400', sans-serif;
 	font-size: 25px;
 	text-align: center;
 	background-color: #FDD331;
@@ -60,14 +63,17 @@ h2 {
 }
 
 h4 {
+	font-family: 'Montserrat:300', sans-serif;
 	text-align: center;
 }
 
 header {
+	font-family: 'Montserrat:600', sans-serif;
 	display: flex;
 }
 
 #siteTitle h1 {
+	font-family: 'Montserrat:700', sans-serif;
 	margin-top: 55px;
 }
 
@@ -80,6 +86,7 @@ header img.logo {
 }
 
 .subheading {
+	font-family: 'Montserrat:400', sans-serif;
 	font-size: 25px;
 	text-align: center;
 	margin-top: 20px;
@@ -98,6 +105,7 @@ header img.logo {
 }
 
 .navigation {
+	font-family: 'Montserrat:200', sans-serif;
 	list-style: none;
 	padding-left: 0;
 }
@@ -247,11 +255,12 @@ section {
 }
 
 footer {
+	font-family: 'Montserrat:200', sans-serif;
 	display: block;
 	background-color: #707070;
 	text-align: center;
 	width: 100%;
-	height: 315px;
+	height: 250px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 0px;
