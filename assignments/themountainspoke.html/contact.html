@@ -113,49 +113,7 @@
 				<br><br>
 			</fieldset>
 			<br><br>
-			<fieldset class="bord">
-				<legend><span><strong>Storm Information</strong></span></legend>
-				<br><br>
-				<label><span>Storm Date:</span><input class="square" type="date" name="storm" value="" required></label>
-				<br><br>
-				<label><span>Storm Type:</span></label>
-				<input class="square" list="list" required>
-				<datalist id='list'>
-					<option class="square">Ice</option>
-					<option class="square">Hail</option>
-					<option class="square">Lightning</option>
-					<option class="square">Thunderstorm</option>
-					<option class="square">Hurricane</option>
-					<option class="square">Tropical</option>
-					<option class="square">Derecho</option>
-					<option class="square">Tornado</option>
-					<option class="square">Bizzard</option>
-					<option class="square">Flash Flood</option>
 
-				</datalist>
-				<br><br>
-				<label for="rating"><span>Storm Severity: 1 </span></label>
-				<input class="square" type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-				<span id="ratingvalue">10</span><br>
-				<!-- output-->
-				<br><br>
-				<label><span>Storm Region:</span></label>
-				<select class="square" >
-					<option class="square" selected disabled>Select Region</option >
-					<option class="square" value="Franklin">Franklin</option>
-					<option class="square" value="Greenville">Greenville</option>
-					<option class="square" value="Springfield">Springfield</option>
-				</select>
-				<br><br>
-				<label><span>User In-Danger Level:</span></label>
-				<br><br>
-				<label><span> Yes </span><input class="square" type="radio" name="level" value="Yes"></label>
-				<br><br>
-				<label><span> Maybe </span><input class="square" type="radio" name="level" value="Maybe"></label>
-				<br><br>
-				<label><span> No </span><input class="square" type="radio" name="level" value="No"></label>
-				<br><br>
-			</fieldset>
 			<br><br>
 			<fieldset class="bord">
 				<legend><span><strong>Additional Information or Comments</strong></span></legend>
