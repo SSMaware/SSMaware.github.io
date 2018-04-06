@@ -1,5 +1,9 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
+
+#foot{
+	color:#fff;
+}
 * {
 	box-sizing: border-box;
 }
@@ -425,5 +429,6 @@ legend{
 	padding: 5px;
 }
 
-#contactinfo {text-align: center;}
+#contactinfo, contactinfo {text-align: center;}
 #map {text-align: center;}
+
