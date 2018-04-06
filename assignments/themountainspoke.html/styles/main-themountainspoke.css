@@ -152,6 +152,7 @@ header img.logo {
 	background-color: lightgray;
 	padding: 10px;
 	font-size: 25px;
+	margin-left: 75px;
 }
 
 .gallery-grid {
@@ -265,6 +266,7 @@ footer {
 	font-family:'Montserrat:200', sans-serif;
 	display: block;
 	background-color: #1A535C;
+	text-decoration-color: #000000;
 	text-align: center;
 	width: 100%;
 	height: 200px;
