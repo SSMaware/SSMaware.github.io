@@ -86,10 +86,13 @@
 		</div>
 		<br>
 		<br>
+		<div class=map>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277662197!2d-111.09291154882665!3d45.67227287900124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523136082727" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 		<br>
 		<br>
 
-		<div id="map" style="width:400px;height:400px;background:yellow"></div>
+		<!--<div id="map" style="width:400px;height:400px;background:yellow"></div>-->
 		<br>
 		<br>
 		<div id=subheading>
@@ -104,13 +107,21 @@
 				<legend><span><strong>Personal Information</strong></span></legend>
 				<br>
 
-				<label><span>First Name:</span><input class="square" name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{1,99}" required></label>
+				<label><span>First Name:</span>
+					<br>
+					<input class="square" name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{1,99}" required></label>
 				<br><br>
-				<label><span>Last Name:</span><input class="square" name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<label><span>Last Name:</span>
+					<br>
+					<input class="square" name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 				<br><br>
-				<label><span>E-mail:</span><input class="square" name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
+				<label><span>E-mail:</span>
+					<br>
+					<input class="square" name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
 				<br><br>
-				<label><span>Phone Number:</span><input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
+				<label><span>Phone Number:</span>
+					<br>
+					<input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
 				<br><br>
 			</fieldset>
 			<br><br>
@@ -144,7 +155,7 @@
 		</aside>
 	</footer>
 
-	<script>
+	<!--<script>
 		function myMap() {
 			var mapOptions = {
 				center: new google.maps.LatLng(45.672293, -111.092398),
@@ -155,12 +166,12 @@
 		}
 	</script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
 
 	<script src="scripts/currentdate.js"></script>
 	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/jqscript.js"></script>
-	<script>
+	<!--<script>
 		var urlString, urlArray, pageHREF, menu, i, currentURL;
 		urlString = document.location.href;
 		urlArray = urlString.split('/');
@@ -176,7 +187,7 @@
 				}
 			}
 		}
-	</script>
+	</script>-->
 </body>
 
 </html>

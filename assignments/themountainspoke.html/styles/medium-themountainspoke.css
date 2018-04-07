@@ -207,3 +207,6 @@ section{
 		margin-top: 15px;
 	}
 }
+#contactinfo, .contactinfo {text-align: center;}
+#map {text-align: center;
+	align-content: center;}

@@ -148,6 +148,9 @@
 		margin-top: 30px;
 	}
 }
+#contactinfo, .contactinfo {text-align: center;}
+#map {text-align: center;
+	align-content: center;}
 
 /* 64em is also 1028px when basefont is 16px */
 

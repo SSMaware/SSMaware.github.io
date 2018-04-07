@@ -430,5 +430,10 @@ legend{
 }
 
 #contactinfo, .contactinfo {text-align: center;}
-#map {text-align: center;}
+#map, .map
+{text-align: center;
+align-content: center;}
 
+#centeringdata {
+	align-content: center;
+}
