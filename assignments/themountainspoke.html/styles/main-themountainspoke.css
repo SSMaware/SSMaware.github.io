@@ -353,6 +353,7 @@ table {
 	font-size: 0.8rem;
 	border-collapse: collapse;
 	margin: 5%;
+	Padding: 10px 10px 10px 10px;
 }
 
 td,
@@ -395,12 +396,12 @@ tfoot {
 
 
 #tableTitle {
-	background-color: #FDD331;
+	background-color: #FFE66D;
 	font-size: 30px;
 }
 
 #tableTitleSmaller {
-	background-color: #FDD331;
+	background-color: #FFE66D;
 	font-size: 20px;
 	color: #000000;
 	/*box-shadow: 5px 5px 10px #454545;
@@ -436,4 +437,13 @@ align-content: center;}
 
 #centeringdata {
 	align-content: center;
+}
+.onepicsales{
+	padding-top: 20px 10px 10px 10px;
+	width: 70%;
+	height: 70%;
+
+}
+.informationanddata{
+	text-align: center;
 }

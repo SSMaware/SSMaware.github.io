@@ -8,7 +8,7 @@
 	/*@media only screen and (min-width: 35rem) {
 	}*/
 	#tableTitleSmaller {
-		background-color: #FDD331;
+		background-color: #FFE66D;
 		font-size: 20px;
 		color: #000000;
 		width: 90%;
@@ -77,12 +77,12 @@
 
 	td {
 		text-align: center;
-		background-color: #FDD331;
+		background-color: #FFE66D;
 	}
 
 	th {
 		text-align: center;
-		background-color: #FDD331;
+		background-color: #FFE66D;
 
 	}
 
@@ -210,3 +210,9 @@ section{
 #contactinfo, .contactinfo {text-align: center;}
 #map {text-align: center;
 	align-content: center;}
+.onepicsales{
+	padding-top: 10px 10px 10px 10px;
+	width: 70%;
+	height: 70%;
+
+}
