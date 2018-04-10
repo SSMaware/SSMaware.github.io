@@ -118,6 +118,7 @@ header img.logo {
 	background-color: #1A535C;
 	list-style: none;
 	padding-left: 0;
+	z-index: 100;
 }
 
 .navigation li {
@@ -131,6 +132,7 @@ header img.logo {
 	justify-content: center;
 	width: 100%;
 	margin: 5px;
+	z-index: 100;
 }
 
 .navigation.responsive li a {
@@ -140,11 +142,13 @@ header img.logo {
 	font-size: 1rem;
 	color: #eee;
 	font-weight: 800;
+	z-index: 100;
 }
 
 
 .navigation.responsive li a:hover {
 	color: #4ECDC4;
+
 }
 
 .bord {

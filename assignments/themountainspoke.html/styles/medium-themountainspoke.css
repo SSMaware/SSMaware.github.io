@@ -29,12 +29,14 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 		font-size: 20px;
+		z-index: 100;
 	}
 
 	.navigation li {
 		display: block;
 		background-color: #1A535C;
 		margin-left: .25rem;
+		z-index: 100;
 	}
 	.navigation a {
 		padding: .5rem;
@@ -42,6 +44,7 @@
 		text-decoration: none;
 		font-weight: 800;
 		color: #eee;
+		z-index: 100;
 	}
 	.navigation a:hover {
 		color: #4ECDC4;
