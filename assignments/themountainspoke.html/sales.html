@@ -61,13 +61,6 @@
 				<img src="images/banner-with-opt.jpg" alt="banner">
 			</picture>
 		</figure>
-		<br>
-		<br>
-		<div id=subheading>
-			<h3>Sales</h3>
-		</div>
-		<br>
-		<br>
 		<section>
 			<section class="currentweatherstats">
 				<!--<h3>Weather Summary for <span id="Gplace"> City, State</span></h3>
@@ -164,9 +157,61 @@
 			</table>
 		</section>-->
 
+		<div class="gallery-grid">
+			<div class=gallery-item>
+				<figure>
+					<img src="images/opt-mountain_bike.jpg" alt="Trek Bike">
+					<figcaption>Trek</figcaption>
+				</figure>
+				<h2>Trek</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
 
+			<div class=gallery-item>
+				<figure>
+					<img src="images/opt-bicycle-bike-forests.jpg" alt="Bulls Bike">
+					<figcaption>Bulls</figcaption>
+				</figure>
+				<h2>Bulls</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
 
+			<div class=gallery-item>
+				<figure>
+					<img src="images/opt-bicycle-bike-brakes.jpg" alt="Basso Bike">
+					<figcaption>Basso</figcaption>
+				</figure>
+				<h2>Basso</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<div class=gallery-item>
+				<figure>
+					<img src="images/snow-park-opt.jpg" alt="snowpark">
+					<figcaption>Snowpark</figcaption>
+				</figure>
+				<h2>SNOWPARK</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<div class=gallery-item>
+				<figure>
+					<img src="images/lightning-opt.jpg" alt="lightning">
+					<figcaption>Lightning</figcaption>
+				</figure>
+				<h2>LIGHTNING</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<div class=gallery-item>
+				<figure>
+					<img src="images/tornado-opt.jpg" alt="tornado">
+					<figcaption>Tornado</figcaption>
+				</figure>
+				<h2>TORNADO</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
 
+<br>
+		<br>
 	</main>
 	<footer id="foot">
 		<aside>
@@ -184,26 +229,7 @@
 	<script src="scripts/wu-greenville.js"></script>
 	<script src="scripts/jqscript.js"></script>
 	<!--<script src="scripts/towns.js"></script>-->
-	<script src="scripts/bikesales.js"></script>
-
-	<script>
-		var urlString, urlArray, pageHREF, menu, i, currentURL;
-		urlString = document.location.href;
-		urlArray = urlString.split('/');
-		pageHREF = urlArray[urlArray.length - 1];
-
-		if (pageHREF !== "") {
-			menu = document.querySelectorAll('ul#mainmenu li a');
-			for (i = 0; i < menu.length; i++) {
-				currentURL = (menu[i].getAttribute('href'));
-				menu[i].parentNode.className = '';
-				if (currentURL === pageHREF) {
-					menu[i].parentNode.className = 'active';
-				}
-			}
-		}
-
-	</script>
+	<!--<script src="scripts/bikesales.js"></script>-->
 
 	<!--<script>
 		var urlString, urlArray, pageHREF, menu, i, currentURL;
@@ -221,9 +247,28 @@
 				}
 			}
 		}
-	</script>
+
+	</script>-->
 
 	<script>
+		var urlString, urlArray, pageHREF, menu, i, currentURL;
+		urlString = document.location.href;
+		urlArray = urlString.split('/');
+		pageHREF = urlArray[urlArray.length - 1];
+
+		if (pageHREF !== "") {
+			menu = document.querySelectorAll('ul#mainmenu li a');
+			for (i = 0; i < menu.length; i++) {
+				currentURL = (menu[i].getAttribute('href'));
+				menu[i].parentNode.className = '';
+				if (currentURL === pageHREF) {
+					menu[i].parentNode.className = 'active';
+				}
+			}
+		}
+	</script>
+
+	<!--<script>
 		var main = document.querySelector('main');
 		var article = document.createElement('article');
 		article.className = "designs";

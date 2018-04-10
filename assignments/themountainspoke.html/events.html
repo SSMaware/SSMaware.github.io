@@ -1,8 +1,6 @@
 <!doctype html>
 
 
-<!--Gallery-->
-
 <html lang="en-us">
 
 	<head>
@@ -125,27 +123,46 @@
 
 			<!--<p>Progree:<progress value="3" max="5"></progress><p>-->
 			<fieldset class="bord">
-				<legend><span><strong>Registration</strong></span></legend>
+				<legend><span><strong>Registration Form</strong></span></legend>
 				<br>
 
-				<label><span>First Name:</span><input class="square" name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{1,99}" required></label>
+				<label><span>First Name:</span>
+					<br>
+					<input class="square" name="firstname" type="text" value="" placeholder="First Name" pattern="[a-zA-Z -._]{1,99}" required></label>
 				<br><br>
-				<label><span>Last Name:</span><input class="square" name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<label><span>Last Name:</span>
+					<br>
+					<input class="square" name="lastname" type="text" value="" placeholder="Last Name" pattern="[a-zA-Z -._]{2,99}" required></label>
 				<br><br>
-				<label><span>E-mail:</span><input class="square" name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
+				<label><span>E-mail:</span>
+					<br>
+					<input class="square" name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
 				<br><br>
-				<label><span>Phone Number:</span><input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
+				<label><span>Phone Number:</span>
+					<br>
+					<input class="square" name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
 				<br><br>
-				<label><span>Zip Code:</span><input class="square" type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -]{5,10}" required></label>
+				<label><span>Zip Code:</span>
+					<br>
+					<input class="square" type="tel" name="zipcode" value="" placeholder="######" pattern="[0-9 -]{5,10}" required></label>
+				<br><br>
+				<label><span>Home State or Country:</span>
+					<br>
+					<input class="square" name="lastname" type="text" value="" placeholder="Home State or Country" pattern="[a-zA-Z -._]{2,99}" required></label>
+				<br><br>
+				<label><span>Birth Date:</span>
+					<br>
+					<input class="square" type="date" name="storm" value="" required></label>
 				<br><br>
 			</fieldset>
 			<br><br>
-			<fieldset class="bord">
+			<!--<fieldset class="bord">
 				<legend><span><strong>Storm Information</strong></span></legend>
 				<br><br>
-				<label><span>Storm Date:</span><input class="square" type="date" name="storm" value="" required></label>
-				<br><br>
-				<label><span>Storm Type:</span></label>
+
+				<label><span>Storm Type:</span>
+					<br>
+				</label>
 				<input class="square" list="list" required>
 				<datalist id='list'>
 					<option class="square">Ice</option>
@@ -162,11 +179,13 @@
 				</datalist>
 				<br><br>
 				<label for="rating"><span>Storm Severity: 1 </span></label>
+				<br>
 				<input class="square" type="range" id="rating" value="10" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 				<span id="ratingvalue">10</span><br>
-				<!-- output-->
+
 				<br><br>
 				<label><span>Storm Region:</span></label>
+				<br>
 				<select class="square" >
 					<option class="square" selected disabled>Select Region</option >
 					<option class="square" value="Franklin">Franklin</option>
@@ -182,7 +201,7 @@
 				<br><br>
 				<label><span> No </span><input class="square" type="radio" name="level" value="No"></label>
 				<br><br>
-			</fieldset>
+			</fieldset>-->
 			<br><br>
 			<fieldset class="bord">
 				<legend><span><strong>Special Accommodations / Comments.</strong></span></legend>
