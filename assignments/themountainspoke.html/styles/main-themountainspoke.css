@@ -163,7 +163,7 @@ header img.logo {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 10px;
-	background-color: #4ECDC4;
+	background-color: #1A535C;
 }
 
 /*.home-grid {
@@ -205,7 +205,7 @@ sf {
 	border: 1px solid black;
 	padding: 10px;
 	text-align: center;
-	background-color: #454545;
+	background-color: #1A535C;
 }
 
 .gallery-item p {
@@ -226,7 +226,7 @@ sf {
 	border: 1px solid black;
 	padding: 10px;
 	text-align: center;
-	background-color: #454545;
+	background-color: #1A535C;
 }
 
 .mainpage-item p {
