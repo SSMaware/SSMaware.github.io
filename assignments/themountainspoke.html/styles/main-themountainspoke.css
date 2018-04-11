@@ -152,6 +152,7 @@ header img.logo {
 }
 
 .bord {
+	display: flex;
 	border: 4px;
 	background-color: #4ECDC4;
 }
@@ -453,4 +454,19 @@ align-content: center;}
 }
 .para{
 	text-align: center;
+}
+
+.button-wrapper{
+	display: block;
+	text-align: center;
+}
+.button {
+	color:#4ECDC4;
+	border: none;
+	border-radius: 3em;
+	box-shadow: 2px 2px 2px #1A535C;
+	display: inline-block;
+	font-size: 1em;
+	padding: 1em 2em;
+	width: auto;
 }
