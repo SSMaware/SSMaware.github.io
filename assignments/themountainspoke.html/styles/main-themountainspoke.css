@@ -475,3 +475,10 @@ align-content: center;}
 	padding: 1em 2em;
 	width: auto;
 }
+.centering{
+	text-align: center;
+	text-decoration-color:#1A535C;
+	margin-right: 50px;
+	margin-left: 50px;
+
+}
