@@ -1,25 +1,27 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-
-#foot{
-	color:#fff;
+#foot {
+	color: #fff;
 }
+
 * {
 	box-sizing: border-box;
 }
+
 .designs {
 	display: flex;
 	justify-content: center;
 }
 
-.designs ul{
+.designs ul {
 	list-style: none;
 }
 
-.weatherStoryTime{
+.weatherStoryTime {
 	padding: 10px;
 	margin: 10px;
 }
+
 #forecast {
 	display: none;
 }
@@ -27,7 +29,7 @@
 body {
 	font-size: 18px;
 	color: #000000;
-	font-family:'Montserrat:200', sans-serif;
+	font-family: 'Montserrat:200', sans-serif;
 }
 
 .superherosquad {
@@ -40,7 +42,7 @@ body {
 }
 
 header title {
-	font-family:'Montserrat:700', sans-serif;
+	font-family: 'Montserrat:700', sans-serif;
 	background-color: #FFFFFF;
 	width: auto;
 	height: 145px;
@@ -51,38 +53,39 @@ header title {
 
 
 h1 {
-	font-family:'Montserrat:500', sans-serif;
+	font-family: 'Montserrat:500', sans-serif;
 	font-size: 50px;
 	text-align: center;
 	margin-top: -5px;
 	margin-bottom: 10px;
-	color:#FF6B6B;
+	color: #FF6B6B;
 }
 
 h2 {
-	font-family:'Montserrat:400', sans-serif;
+	font-family: 'Montserrat:400', sans-serif;
 	font-size: 25px;
 	text-align: center;
 	color: #4ECDC4;
 }
-h3{
-	font-size:20px;
-	color:#FF6B6B;
+
+h3 {
+	font-size: 20px;
+	color: #FF6B6B;
 }
 
 h4 {
-	font-family:'Montserrat:300', sans-serif;
+	font-family: 'Montserrat:300', sans-serif;
 	text-align: center;
 }
 
 header {
-	font-family:'Montserrat:600', sans-serif;
+	font-family: 'Montserrat:600', sans-serif;
 	display: flex;
 }
 
 #siteTitle h1 {
-	font-family:'Montserrat700', sans-serif;
-	color:#FF6B6B;
+	font-family: 'Montserrat700', sans-serif;
+	color: #FF6B6B;
 	margin-top: 55px;
 }
 
@@ -95,15 +98,17 @@ header img.logo {
 }
 
 .subheading {
-	font-family:'Montserrat:500', sans-serif;
-	color:#4ECDC4;
+	font-family: 'Montserrat:500', sans-serif;
+	color: #4ECDC4;
 	font-size: 25px;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-#subheading { font-family:'Montserrat:200', sans-serif;
-	color:#FF6B6B;
+
+#subheading {
+	font-family: 'Montserrat:200', sans-serif;
+	color: #FF6B6B;
 	text-align: center;
 }
 
@@ -119,7 +124,7 @@ header img.logo {
 }
 
 .navigation {
-	font-family:'Montserrat:200', sans-serif;
+	font-family: 'Montserrat:200', sans-serif;
 	background-color: #1A535C;
 	list-style: none;
 	padding-left: 0;
@@ -160,6 +165,8 @@ header img.logo {
 	display: flex;
 	border: 4px;
 	background-color: #4ECDC4;
+	text-decoration-color: #000000;
+	margin: 10px 10px 10px 10px;
 }
 
 .square {
@@ -170,9 +177,11 @@ header img.logo {
 }
 
 .gallery-grid {
+	margin: 10px 10px 10px 10px;
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 10px;
+	margin: 10px 10px 10px 10px;
 	background-color: #1A535C;
 }
 
@@ -199,21 +208,17 @@ header img.logo {
 }
 */
 
-
-
 /*.fn,
 gv,
 sf {
 	image-orientation: center;
 }*/
 
-
-
 .gallery-item {
 	color: #fff;
 	margin-bottom: 40px;
 	border: 1px solid black;
-	padding: 20px;
+	padding: 20px 20px 20px 20px;
 	text-align: center;
 	background-color: #1A535C;
 }
@@ -258,7 +263,7 @@ main figure img {
 	width: 100%;
 }
 
-.skybanner img{
+.skybanner img {
 	border: 5px solid #707070;
 }
 
@@ -277,7 +282,7 @@ section {
 }
 
 footer {
-	font-family:'Montserrat:200', sans-serif;
+	font-family: 'Montserrat:200', sans-serif;
 	display: block;
 	background-color: #1A535C;
 	text-decoration-color: #000000;
@@ -369,7 +374,8 @@ table {
 td,
 th {
 	text-align: center;
-	border: 3px; color:#000000;
+	border: 3px;
+	color: #000000;
 	padding: 10px 20px;
 	font-size: 15px;
 	color: black;
@@ -434,44 +440,55 @@ tfoot {
 	height: auto;
 }
 
-legend{
+legend {
 	background-color: white;
 	font-size: 22px;
 	padding: 5px;
 }
 
-#contactinfo, .contactinfo {text-align: center;}
-#map, .map
-{text-align: center;
-align-content: center;}
+#contactinfo,
+.contactinfo {
+	text-align: center;
+}
+
+#map,
+.map {
+	text-align: center;
+	align-content: center;
+}
 
 #centeringdata {
 	align-content: center;
 }
-.onepicsales{
+
+.onepicsales {
 	padding-top: 20px 10px 10px 10px;
 	width: 70%;
 	height: 70%;
 
 }
-.informationanddata{
+
+.informationanddata {
 	text-align: center;
 }
-.para{
+
+.para {
 	text-align: center;
 	padding: 20px 10px 30px 10px;
 	margin-left: 30px;
 	margin-right: 30px;
-	border: 4px; color:#1A535C;
+	border: 4px;
+	color: #1A535C;
 	border-style: dashed;
 }
 
-.button-wrapper{
+.button-wrapper {
 	display: block;
 	text-align: center;
 }
+
 .button {
-	color:#4ECDC4;
+	color: #4ECDC4;
 	border: none;
 	border-radius: 3em;
 	box-shadow: 2px 2px 2px 2px #1A535C;
@@ -480,21 +497,29 @@ align-content: center;}
 	padding: 1em 2em;
 	width: auto;
 }
-.centering{
+
+.centering {
 	text-align: center;
-	text-decoration-color:#1A535C;
+	text-decoration-color: #1A535C;
 	margin-right: 50px;
 	margin-left: 50px;
 
 }
 
-.adventuretours{align-content: center;
-padding-top:10px;}
-
-.text{color: #000000;
-margin-right: 50px;
-margin-left: 50px;
+.adventuretours {
+	align-content: center;
+	padding-top: 10px;
 }
+
+.texty {
+	color: #000000;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
 .texting {
 	color: #FF6B6B;
+}
+.list{
+	align-content: center;
 }
