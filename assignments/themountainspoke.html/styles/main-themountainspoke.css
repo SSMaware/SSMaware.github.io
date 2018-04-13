@@ -63,7 +63,7 @@ h2 {
 	font-family:'Montserrat:400', sans-serif;
 	font-size: 25px;
 	text-align: center;
-	color: #000000;
+	color: #4ECDC4;
 }
 h3{
 	font-size:20px;
@@ -459,6 +459,11 @@ align-content: center;}
 }
 .para{
 	text-align: center;
+	padding: 20px 10px 30px 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: 4px; color:#1A535C;
+	border-style: dashed;
 }
 
 .button-wrapper{
@@ -481,4 +486,15 @@ align-content: center;}
 	margin-right: 50px;
 	margin-left: 50px;
 
+}
+
+.adventuretours{align-content: center;
+padding-top:10px;}
+
+.text{color: #000000;
+margin-right: 50px;
+margin-left: 50px;
+}
+.texting {
+	color: #FF6B6B;
 }
